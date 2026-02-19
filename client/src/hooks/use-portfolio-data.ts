@@ -74,7 +74,7 @@ const PROJECTS: Project[] = [
     image: beesImg,
     githubLink: "https://github.com/LukeMcPartlan/MLAgentsUnityBees",
     extraImages: [
-      { src: beesTensorboardImg, caption: "TensorBoard training logs — comparing curriculum, step-based, and unified reward approaches" },
+      { src: beesTensorboardImg, caption: "TensorBoard training logs — while curriculum-based approaches initially learned faster, the raw unified reward version took longer but ultimately achieved higher fidelity" },
     ],
   },
   {
