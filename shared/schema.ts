@@ -1,18 +1,29 @@
-import { sql } from "drizzle-orm";
-import { pgTable, text, varchar } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  username: text("username").notNull().unique(),
-  password: text("password").notNull(),
+// We define our data types here for the frontend to use.
+// Since there is no backend, these are just for frontend type safety.
+
+export const projectSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  description: z.string(),
+  category: z.enum(["Game Design", "Computer Science", "Education", "Esports"]),
+  link: z.string().optional(),
+  demoLink: z.string().optional(),
+  githubLink: z.string().optional(),
+  imagePlaceholder: z.string().optional(),
 });
 
-export const insertUserSchema = createInsertSchema(users).pick({
-  username: true,
-  password: true,
+export type Project = z.infer<typeof projectSchema>;
+
+export const experienceSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  company: z.string(),
+  date: z.string(),
+  description: z.array(z.string()),
+  category: z.enum(["Education", "Esports", "Other"]),
+  imagePlaceholder: z.string().optional(),
 });
 
-export type InsertUser = z.infer<typeof insertUserSchema>;
-export type User = typeof users.$inferSelect;
+export type Experience = z.infer<typeof experienceSchema>;
