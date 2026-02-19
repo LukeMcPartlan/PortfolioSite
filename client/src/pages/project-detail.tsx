@@ -2,9 +2,17 @@ import { useRoute } from "wouter";
 import { useProjects } from "@/hooks/use-portfolio-data";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Github, ExternalLink, Play } from "lucide-react";
+import { ArrowLeft, Github, ExternalLink, Play, FolderOpen } from "lucide-react";
 import { Link } from "wouter";
 import NotFound from "@/pages/not-found";
+
+function isYouTubeEmbed(url?: string) {
+  return url?.includes("youtube.com/embed");
+}
+
+function isUnityPlay(url?: string) {
+  return url?.includes("play.unity.com");
+}
 
 export default function ProjectDetail() {
   const [match, params] = useRoute("/project/:id");
@@ -16,15 +24,32 @@ export default function ProjectDetail() {
   
   if (!project) return <NotFound />;
 
-  return (
-    <div className="max-w-4xl mx-auto space-y-8 animate-in">
-      <Link href={project.category === "Game Design" ? "/game-design" : "/computer-science"}>
-        <Button variant="ghost" className="pl-0 hover:bg-transparent hover:text-primary">
-          <ArrowLeft className="mr-2 h-4 w-4" /> Back to {project.category}
-        </Button>
-      </Link>
+  const renderMedia = () => {
+    if (isYouTubeEmbed(project.embedUrl)) {
+      return (
+        <div className="space-y-4">
+          <div>
+            <Badge className="mb-4 bg-primary text-white border-none">{project.category}</Badge>
+            <h1 className="text-4xl md:text-5xl font-display font-bold mb-2">{project.title}</h1>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <div className="aspect-video w-full">
+              <iframe
+                src={project.embedUrl}
+                title={project.title}
+                className="w-full h-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                data-testid="iframe-youtube-embed"
+              />
+            </div>
+          </div>
+        </div>
+      );
+    }
 
-      {project.embedUrl ? (
+    if (isUnityPlay(project.embedUrl)) {
+      return (
         <div className="space-y-4">
           <div>
             <Badge className="mb-4 bg-primary text-white border-none">{project.category}</Badge>
@@ -49,28 +74,42 @@ export default function ProjectDetail() {
                 <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center shadow-lg shadow-primary/30 group-hover:scale-110 transition-transform">
                   <Play className="w-10 h-10 text-white ml-1" />
                 </div>
-                <span className="text-xl font-bold text-white">Play Axonauts Demo</span>
+                <span className="text-xl font-bold text-white">Play {project.title} Demo</span>
                 <span className="text-sm text-white/60">Opens on Unity Play</span>
               </div>
             </div>
           </a>
         </div>
-      ) : (
-        <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-          <div className="aspect-video w-full bg-secondary">
-            <img 
-              src={project.image} 
-              alt={project.title} 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-          <div className="absolute bottom-0 left-0 p-8">
-            <Badge className="mb-4 bg-primary text-white border-none">{project.category}</Badge>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-2">{project.title}</h1>
-          </div>
+      );
+    }
+
+    return (
+      <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+        <div className="aspect-video w-full bg-secondary">
+          <img 
+            src={project.image} 
+            alt={project.title} 
+            className="w-full h-full object-cover"
+          />
         </div>
-      )}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute bottom-0 left-0 p-8">
+          <Badge className="mb-4 bg-primary text-white border-none">{project.category}</Badge>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-2">{project.title}</h1>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto space-y-8 animate-in">
+      <Link href={project.category === "Game Design" ? "/game-design" : "/computer-science"}>
+        <Button variant="ghost" className="pl-0 hover:bg-transparent hover:text-primary">
+          <ArrowLeft className="mr-2 h-4 w-4" /> Back to {project.category}
+        </Button>
+      </Link>
+
+      {renderMedia()}
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="md:col-span-2 space-y-6">
@@ -98,7 +137,11 @@ export default function ProjectDetail() {
             {project.githubLink ? (
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="block">
                 <Button className="w-full gap-2" variant="outline">
-                  <Github className="w-4 h-4" /> View Source
+                  {project.githubLink.includes("github.com") ? (
+                    <><Github className="w-4 h-4" /> View Source</>
+                  ) : (
+                    <><FolderOpen className="w-4 h-4" /> View Source Files</>
+                  )}
                 </Button>
               </a>
             ) : (
