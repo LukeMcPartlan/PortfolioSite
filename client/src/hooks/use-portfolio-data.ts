@@ -8,6 +8,7 @@ import beesImg from "@assets/image_1771542399519.png";
 import bazaargenImg from "@assets/image_1771542435820.png";
 import discordImg from "@assets/discord-bot-preview.png";
 import beesTensorboardImg from "@assets/image_1771542749213.png";
+import crownsImg from "@assets/crowns-of-power-preview.png";
 
 export interface Project {
   id: string;
@@ -76,6 +77,16 @@ const PROJECTS: Project[] = [
     extraImages: [
       { src: beesTensorboardImg, caption: "TensorBoard training logs — while curriculum-based approaches initially learned faster, the raw unified reward version took longer but ultimately achieved higher fidelity" },
     ],
+  },
+  {
+    id: "crowns-of-power",
+    title: "Crowns of Power",
+    description: "A metroidvania rage game with 6 bosses, a bullet hell final boss, 5 dungeons, and 4 unique traversal powers — built in one week.",
+    longDescription: "Crowns of Power is a metroidvania rage game featuring 6 bosses, a bullet hell final boss, 5 dungeons to explore, and 4 unique powers for traversing the map. The game is open-ended with multiple solutions to every encounter.\n\nThis game was built in approximately one week — roughly 50 hours of development — while working full time as a teacher. All artwork in the game was a collaboration: professional-quality art was created by Cole Gates, while the remaining assets were created by me. Built in Unity as a submission for the Bigmode Game Jam 2025.",
+    category: "Game Development",
+    tags: ["Unity", "C#", "Metroidvania", "Game Jam", "Pixel Art"],
+    image: crownsImg,
+    demoLink: "https://bows.itch.io/crowns-of-power",
   },
   {
     id: "java-engine",
