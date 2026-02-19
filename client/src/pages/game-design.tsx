@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function GameDesign() {
   const { data: projects } = useProjects();
-  const gameProjects = projects?.filter(p => p.category === "Game Design") || [];
+  const gameProjects = projects?.filter(p => p.category === "Game Development") || [];
   const axonauts = gameProjects.find(p => p.id === "axonauts");
   const otherProjects = gameProjects.filter(p => p.id !== "axonauts");
 
@@ -18,7 +18,7 @@ export default function GameDesign() {
         <div>
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-4 flex items-center gap-3">
             <Gamepad2 className="w-10 h-10 text-primary" />
-            Game Design
+            Game Development
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
             Creating immersive, interactive experiences. From custom engines in Java to complex systems in Unity.

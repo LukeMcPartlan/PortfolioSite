@@ -9,7 +9,7 @@ export interface Project {
   title: string;
   description: string;
   longDescription?: string;
-  category: "Game Design" | "Computer Science" | "Education" | "Esports";
+  category: "Game Development" | "Computer Science" | "Education" | "Esports";
   tags: string[];
   link?: string;
   demoLink?: string;
@@ -42,8 +42,8 @@ const PROJECTS: Project[] = [
     title: "Axonauts",
     description: "Core game design project — a roguelike RPG whose implemented scope rivals many modern indie releases. Features turn-based combat, modular abilities, party system, and deep tooltip systems.",
     longDescription: "Axonauts is my flagship game design project — a story-driven roguelike RPG inspired by Slay the Spire, Darkest Dungeon, and Hades whose implemented scope is larger than many modern indie roguelike releases. As sole developer, I designed and built every system from scratch in Unity/C#.\n\nThe game features a full conversation system with branching dialogue, turn-based combat with strategic depth, and a modular ability system where abilities can be used by both enemies and allies — meaning every ability in the game is a shared building block rather than hardcoded per character.\n\nCharacters are fully modular, supporting party system mechanics that let players reconfigure their party composition on the fly. The UI includes responsive tooltips that dynamically break down the massive amount of information players need: buffs, debuffs, targeting rules, ability effects, passive triggers, status durations, and much more — all surfaced contextually so the player is never overwhelmed.\n\nThe architecture required to support this level of systemic depth — where any ability can interact with any character, any buff can stack or conflict with any debuff, and tooltips must accurately reflect the current game state — represents a significant engineering challenge that goes well beyond typical indie scope.",
-    category: "Game Design",
-    tags: ["Unity", "C#", "Game Design", "Solo Dev", "Turn-Based Combat", "Roguelike"],
+    category: "Game Development",
+    tags: ["Unity", "C#", "Game Development", "Solo Dev", "Turn-Based Combat", "Roguelike"],
     image: axonautsImg,
     demoLink: "https://play.unity.com/en/games/ff12099c-e8f8-40e2-b26e-6c3f90204942/axonauts-pre-alpha-demo-003",
     embedUrl: "https://play.unity.com/en/games/ff12099c-e8f8-40e2-b26e-6c3f90204942/axonauts-pre-alpha-demo-003",
@@ -72,7 +72,7 @@ const PROJECTS: Project[] = [
     title: "Java Game Engine",
     description: "Custom game engine built entirely from scratch. All games built in this engine are under 1MB total.",
     longDescription: "A foundational computer science project exploring the architecture of game engines. Implements rendering loops, physics detection, and entity management without external game libraries. A standout achievement: the total file size for all games built in this engine are under a megabyte, demonstrating extreme efficiency and deep understanding of low-level programming.",
-    category: "Game Design",
+    category: "Game Development",
     tags: ["Java", "Engine Architecture", "Computer Graphics"],
     image: "https://img.youtube.com/vi/Q5191kdaQ3E/maxresdefault.jpg",
     demoLink: "https://www.youtube.com/watch?v=Q5191kdaQ3E",
@@ -85,7 +85,7 @@ const PROJECTS: Project[] = [
     description: "A sampling of student-built Unity games with 1,000+ cumulative plays across portfolios.",
     longDescription: "These three student portfolios represent just a small sampling of the diverse games my students have created in Unity. From platformers to puzzle games, RPGs to action titles, students explored a wide range of genres and mechanics. Each project required individual debugging support — across dozens of bespoke student projects, I developed the ability to simultaneously debug 30+ unique game codebases, each with its own architecture and call stack. Together, these student games have accumulated over 1,000 plays on Unity Play, demonstrating real engagement with their work. Note: not all student games are included here — this is a small sampling of the full body of work.",
     category: "Education",
-    tags: ["Unity", "C#", "Teaching", "Game Design", "Student Work"],
+    tags: ["Unity", "C#", "Teaching", "Game Development", "Student Work"],
     image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=800&q=80",
     link: "#student-portfolios",
   },
@@ -94,8 +94,8 @@ const PROJECTS: Project[] = [
     title: "Hytale Modding",
     description: "Skyrim Giants mod for Hytale — published on CurseForge with 250+ players.",
     longDescription: "A mod created for Hytale, the upcoming game from Hypixel Studios. This project involved modding game assets and mechanics to bring Skyrim-inspired giants into the Hytale universe. Published on CurseForge for the community to download and use, the mod has attracted over 250 players.",
-    category: "Game Design",
-    tags: ["Hytale", "Modding", "CurseForge", "Game Design"],
+    category: "Game Development",
+    tags: ["Hytale", "Modding", "CurseForge", "Game Development"],
     image: "https://img.youtube.com/vi/xjPS6X0wRWY/maxresdefault.jpg",
     githubLink: "https://github.com/LukeMcPartlan/HytaleMod",
     embedUrl: "https://www.youtube.com/embed/xjPS6X0wRWY",
@@ -106,8 +106,8 @@ const PROJECTS: Project[] = [
     title: "Student Game Portfolios",
     description: "A sampling of student-built Unity games with 1,000+ cumulative plays across portfolios.",
     longDescription: "These three student portfolios represent just a small sampling of the diverse games my students have created in Unity. From platformers to puzzle games, RPGs to action titles, students explored a wide range of genres and mechanics. Each project required individual debugging support — across dozens of bespoke student projects, I developed the ability to simultaneously debug 30+ unique game codebases, each with its own architecture and call stack. Together, these student games have accumulated over 1,000 plays on Unity Play, demonstrating real engagement with their work. Note: not all student games are included here — this is a small sampling of the full body of work.",
-    category: "Game Design",
-    tags: ["Unity", "C#", "Teaching", "Game Design", "Student Work"],
+    category: "Game Development",
+    tags: ["Unity", "C#", "Teaching", "Game Development", "Student Work"],
     image: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=800&q=80",
     link: "#student-portfolios",
   },
@@ -125,7 +125,7 @@ const PROJECTS: Project[] = [
 const EXPERIENCE: Experience[] = [
   {
     id: "east-ramapo",
-    title: "High School CS & Game Design Teacher",
+    title: "High School CS & Game Development Teacher",
     company: "East Ramapo School District",
     period: "Sep 2024 - Present",
     description: [

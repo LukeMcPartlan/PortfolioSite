@@ -54,13 +54,13 @@ export default function StudentPortfolios() {
         </Link>
         <Link href="/game-design">
           <Button variant="ghost" className="pl-0 hover:bg-transparent hover:text-primary">
-            <ArrowLeft className="mr-2 h-4 w-4" /> Game Design
+            <ArrowLeft className="mr-2 h-4 w-4" /> Game Development
           </Button>
         </Link>
       </div>
 
       <div>
-        <Badge className="mb-4 bg-primary text-white border-none">Education / Game Design</Badge>
+        <Badge className="mb-4 bg-primary text-white border-none">Education / Game Development</Badge>
         <h1 className="text-4xl md:text-5xl font-display font-bold mb-4" data-testid="text-page-title">Student Game Portfolios</h1>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
           These portfolios represent a small sampling of the diverse games my students have built in Unity. From platformers to puzzle games, RPGs to action titles, students explored a wide range of genres and mechanics while learning C# and game design principles.
@@ -151,7 +151,7 @@ export default function StudentPortfolios() {
       </div>
 
       <div className="flex flex-wrap gap-2">
-        {["Unity", "C#", "Game Design", "Teaching", "Student Work", "Debugging"].map(tag => (
+        {["Unity", "C#", "Game Development", "Teaching", "Student Work", "Debugging"].map(tag => (
           <Badge key={tag} variant="secondary" className="px-3 py-1 bg-secondary text-primary">
             {tag}
           </Badge>

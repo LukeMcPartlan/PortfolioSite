@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   const categories = [
     {
-      title: "Game Design",
+      title: "Game Development",
       icon: Gamepad2,
       desc: "Creating immersive worlds with Unity & C#",
       href: "/game-design",

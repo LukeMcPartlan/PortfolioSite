@@ -9,7 +9,7 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "/game-design", label: "Game Design", icon: Gamepad2 },
+    { href: "/game-design", label: "Game Development", icon: Gamepad2 },
     { href: "/computer-science", label: "Computer Science", icon: Code2 },
     { href: "/education", label: "Education", icon: GraduationCap },
     { href: "/esports", label: "Esports", icon: Trophy },
