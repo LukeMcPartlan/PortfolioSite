@@ -114,9 +114,11 @@ export default function ProjectDetail() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="md:col-span-2 space-y-6">
           <h2 className="text-2xl font-display font-bold">About the Project</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            {project.longDescription || project.description}
-          </p>
+          <div className="text-lg text-muted-foreground leading-relaxed space-y-4">
+            {(project.longDescription || project.description).split("\n\n").map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
           
           <div className="pt-6">
             <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-4">Technologies Used</h3>
