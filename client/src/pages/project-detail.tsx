@@ -2,7 +2,7 @@ import { useRoute } from "wouter";
 import { useProjects } from "@/hooks/use-portfolio-data";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Github, ExternalLink, Play, FolderOpen } from "lucide-react";
+import { ArrowLeft, Github, ExternalLink, Play, FolderOpen, Download } from "lucide-react";
 import { Link } from "wouter";
 import NotFound from "@/pages/not-found";
 
@@ -152,7 +152,13 @@ export default function ProjectDetail() {
                 </Button>
             )}
 
-            {project.demoLink ? (
+            {project.downloadLink ? (
+              <a href={project.downloadLink} target="_blank" rel="noopener noreferrer" className="block">
+                <Button className="w-full gap-2">
+                  <Download className="w-4 h-4" /> Download on CurseForge
+                </Button>
+              </a>
+            ) : project.demoLink ? (
               <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="block">
                 <Button className="w-full gap-2">
                   <ExternalLink className="w-4 h-4" /> Live Demo

@@ -16,6 +16,7 @@ export interface Project {
   githubLink?: string;
   image?: string;
   embedUrl?: string;
+  downloadLink?: string;
 }
 
 export interface Experience {
@@ -97,8 +98,8 @@ const PROJECTS: Project[] = [
     tags: ["Hytale", "Modding", "CurseForge", "Game Design"],
     image: "https://img.youtube.com/vi/xjPS6X0wRWY/maxresdefault.jpg",
     githubLink: "https://github.com/LukeMcPartlan/HytaleMod",
-    demoLink: "https://www.youtube.com/watch?v=xjPS6X0wRWY",
     embedUrl: "https://www.youtube.com/embed/xjPS6X0wRWY",
+    downloadLink: "https://www.curseforge.com/hytale/mods/skyrim-giants",
   },
   {
     id: "student-portfolios-gd",
