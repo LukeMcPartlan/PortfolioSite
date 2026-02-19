@@ -1,0 +1,54 @@
+LUKE MCPARTLAN-ALVAREZ
+Yonkers, NY  •  (914) 310-3734  •  Lukemcp45@gmail.com  •  luke-alvarez.com  •  LinkedIn
+PROFESSIONAL SUMMARY
+Versatile Computer Science educator, developer, and game designer with 4+ years teaching CS, engineering, math, and game design from middle school through college. Experienced in full-stack web development, Unity game development, machine learning, and curriculum design. Passionate about bringing industry-standard tools and practices into education at every level.
+WORK EXPERIENCE
+High School CS & Game Design Teacher  |  East Ramapo School District Sep 2024 – Present
+Teaching Unity game design and web development to high school students.
+Designing and delivering project-based curriculum covering C#, game mechanics, and industry-standard workflows.
+Math Teacher (Algebra)  |  Yonkers School District Sep 2023 – Jun 2024
+Taught 7th, 8th, and 9th grade Algebra sections; achieved 180% average annual growth per iReady Diagnostic Testing — 80% above the district average.
+Computer Science Adjunct Professor  |  SUNY Orange College Sep 2023 – Jan 2024
+Delivered college-level Computer Science instruction, deepening understanding of the skills students need to thrive in STEM programs.
+Computer Science Teacher  |  Middletown City School District  Sep 2020 –Jun  2023
+Brought cutting-edge CS education to the middle school level for the first time in district history; taught Python to 8th graders and designed full 7th–8th grade CS curriculum.
+As the sole CS educator, developed the ability to simultaneously debug 30 bespoke student game design projects, requiring deep understanding of each project's call stack.
+Founded and grew the district's first Esports program — 90% of admitted players rose from below the 40th percentile to above the 80th percentile globally; achieved three interstate first-place tournament wins against 150+ competitors in year one.
+Established a Robotics Summer Camp: 7th and 8th graders went from zero coding experience to building and programming autonomous battlebots in one week.
+Led development of 8th-grade CS curriculum at a Siena College CS Education conference, setting a standard for NYS middle school CS; ran workshop days helping fellow teachers implement the curriculum.
+Collaborated with architects on an $83M school renovation; secured an Esports room and state-of-the-art industrial engineering facilities for the tech department.
+Managed the school's annual technology budget of $13,000 — ordered robot kits, 3D printers, and other equipment; ordered, maintained, and repaired 3D printers.
+Taught the first middle school CS class in the district (2023); retooled the high school game design unit toward industry tools (Unity/Unreal Engine).
+
+
+PROJECTS & PORTFOLIO
+Axonauts (Game) — Unity, C#
+Story-driven roguelike RPG inspired by Slay the Spire, currently in pre-alpha. Sole developer handling all game design, code, and art direction.
+Demo: https://play.unity.com/en/games/ff12099c-e8f8-40e2-b26e-6c3f90204942/axonauts-pre-alpha-demo-003
+BazaarGen (Web App) — Node.js, Database Backend, Google OAuth
+User-generated content platform with database backend, Google Single Sign-In, and 50+ registered users.
+Live Site: https://bazaargen.com/
+AI/ML Bees — Unity, ML-Agents, C#, Python
+Machine learning project testing different training configurations to achieve a 90% success rate on a complex task in minimum time.
+GitHub: https://github.com/LukeMcPartlan/MLAgentsUnityBees
+Java Game Engine — Java, Java Applet
+Custom game engine and games built on top of it from scratch in college.
+Demo Video: https://www.youtube.com/watch?v=Q5191kdaQ3E
+RyanRoaster Discord Bot — Node.js, Discord API, OpenAI API
+GitHub: https://github.com/LukeMcPartlan/DiscordRoastBot
+SKILLS
+Programming Languages: Python, Java, JavaScript (Node.js), C#, HTML, LaTeX, Block-Based (Scratch)
+Game Development: Unity, ML-Agents, Game Design Principles, Curriculum Development for Game Design
+Web Development: Full-Stack (Node.js, Database Backends), Google OAuth, User-Generated Content Platforms, Over 100 user sign ups across full stack web projects. 
+Education: Curriculum Writing, Differentiated Instruction, Esports Program Management, Budget Management
+Soft Skills: Leadership, Communication, Problem Solving, Collaboration, Continuous Learning
+EDUCATION
+M.S. Mathematics Education 7–12 — Lehman College, Bronx, NYMay 2020
+B.S. Computer Science — Lehman College, Bronx, NYMay 2019
+CERTIFICATIONS & AWARDS
+NYS Computer Science K–12 Teaching Certification — NY State (one of the first recipients)Jun 2023
+NYS Technology Teaching Certificate — NY State (Tech Credits, Engineering)Jun 2023
+NYS Mathematics 7–12 Teaching Certification — NY StateJun 2020
+AlgoExpert Certificate — AlgoExpert.io (Algorithms)Mar 2023
+BlockChain Expert Certificate — AlgoExpert.io (Blockchain)Apr 2023
+Certificate of Excellence & $1,000 STEM Grant — Orange and Rockland CountyJun 2021
