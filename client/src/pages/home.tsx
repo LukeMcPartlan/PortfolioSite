@@ -112,11 +112,12 @@ export default function Home() {
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 border-t border-white/5">
         <div className="text-center md:text-left">
           <h4 className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">Location</h4>
-          <p className="text-lg">Yonkers, NY</p>
+          <p className="text-lg">NY City</p>
         </div>
         <div className="text-center md:text-left">
           <h4 className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">Education</h4>
           <p className="text-lg">M.S. Mathematics Education</p>
+          <p className="text-lg">B.S. Computer Science</p>
           <p className="text-muted-foreground">Lehman College</p>
         </div>
         <div className="text-center md:text-left">
