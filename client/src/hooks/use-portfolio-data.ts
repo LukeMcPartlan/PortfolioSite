@@ -3,6 +3,10 @@
 
 import { useQuery } from "@tanstack/react-query";
 import axonautsImg from "@assets/image_1771537857944.png";
+import trumpismsImg from "@assets/image_1771542364908.png";
+import beesImg from "@assets/image_1771542399519.png";
+import bazaargenImg from "@assets/image_1771542435820.png";
+import discordImg from "@assets/discord-bot-preview.png";
 
 export interface Project {
   id: string;
@@ -56,7 +60,7 @@ const PROJECTS: Project[] = [
     category: "Computer Science",
     tags: ["Node.js", "PostgreSQL", "OAuth", "Web Dev"],
     githubLink: "#",
-    image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=800&q=80", // Code screen
+    image: bazaargenImg,
   },
   {
     id: "ai-ml-bees",
@@ -65,7 +69,7 @@ const PROJECTS: Project[] = [
     longDescription: "An experimental project using Unity ML-Agents to train agents (bees) to perform complex navigation and resource gathering tasks using reinforcement learning.",
     category: "Computer Science",
     tags: ["Unity", "ML-Agents", "Python", "C#", "AI"],
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80", // AI/Neural net
+    image: beesImg,
   },
   {
     id: "java-engine",
@@ -112,13 +116,23 @@ const PROJECTS: Project[] = [
     link: "#student-portfolios",
   },
   {
+    id: "competitive-trumpisms",
+    title: "Competitive Trumpisms",
+    description: "Full-stack web app where users rate Trump quotes in head-to-head Elo-ranked matchups across categories.",
+    longDescription: "Competitive Trumpisms is a full-stack web application that lets users rate the most iconic, funny, and outrageous Trump quotes in head-to-head matchups. Users vote on pairs of quotes within three categories — Iconic, Funny, and Evil — and after 10 votes, unlock an Elo-based leaderboard showing how the community ranks each quote.\n\nThe app features category-based voting, real-time vote tracking, and a competitive ranking system inspired by chess Elo ratings. Built with a modern web stack including React, Node.js, and PostgreSQL.",
+    category: "Computer Science",
+    tags: ["React", "Node.js", "PostgreSQL", "Web Dev", "Elo Rating"],
+    image: trumpismsImg,
+    demoLink: "https://trump-rating--lukemcp45.replit.app/",
+  },
+  {
     id: "ryan-roaster",
     title: "RyanRoaster Bot",
     description: "Discord Bot utilizing OpenAI API for interaction.",
     longDescription: "A community engagement bot for Discord that leverages OpenAI's GPT models to generate humorous and context-aware responses.",
     category: "Computer Science",
     tags: ["Node.js", "OpenAI API", "Discord.js"],
-    image: "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=800&q=80", // Robot/Bot
+    image: discordImg,
   }
 ];
 
