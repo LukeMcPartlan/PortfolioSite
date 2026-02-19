@@ -89,6 +89,17 @@ const PROJECTS: Project[] = [
     link: "#student-portfolios",
   },
   {
+    id: "hytale-modding",
+    title: "Hytale Modding",
+    description: "Skyrim Giants mod for Hytale — published on CurseForge.",
+    longDescription: "A mod created for Hytale, the upcoming game from Hypixel Studios. This project involved modding game assets and mechanics to bring Skyrim-inspired giants into the Hytale universe. Published on CurseForge for the community to download and use.",
+    category: "Game Design",
+    tags: ["Hytale", "Modding", "CurseForge", "Game Design"],
+    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
+    githubLink: "https://github.com/LukeMcPartlan/HytaleMod",
+    demoLink: "https://www.curseforge.com/hytale/mods/skyrim-giants",
+  },
+  {
     id: "student-portfolios-gd",
     title: "Student Game Portfolios",
     description: "A sampling of student-built Unity games with 1,000+ cumulative plays across portfolios.",
