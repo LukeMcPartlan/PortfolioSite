@@ -91,13 +91,14 @@ const PROJECTS: Project[] = [
   {
     id: "hytale-modding",
     title: "Hytale Modding",
-    description: "Skyrim Giants mod for Hytale — published on CurseForge.",
-    longDescription: "A mod created for Hytale, the upcoming game from Hypixel Studios. This project involved modding game assets and mechanics to bring Skyrim-inspired giants into the Hytale universe. Published on CurseForge for the community to download and use.",
+    description: "Skyrim Giants mod for Hytale — published on CurseForge with 250+ players.",
+    longDescription: "A mod created for Hytale, the upcoming game from Hypixel Studios. This project involved modding game assets and mechanics to bring Skyrim-inspired giants into the Hytale universe. Published on CurseForge for the community to download and use, the mod has attracted over 250 players.",
     category: "Game Design",
     tags: ["Hytale", "Modding", "CurseForge", "Game Design"],
-    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
+    image: "https://img.youtube.com/vi/xjPS6X0wRWY/maxresdefault.jpg",
     githubLink: "https://github.com/LukeMcPartlan/HytaleMod",
-    demoLink: "https://www.curseforge.com/hytale/mods/skyrim-giants",
+    demoLink: "https://www.youtube.com/watch?v=xjPS6X0wRWY",
+    embedUrl: "https://www.youtube.com/embed/xjPS6X0wRWY",
   },
   {
     id: "student-portfolios-gd",
