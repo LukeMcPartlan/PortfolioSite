@@ -51,7 +51,7 @@ export default function GameDesign() {
                 <div className="p-8 flex flex-col justify-center space-y-4">
                   <div className="flex flex-wrap items-center gap-2">
                     <Badge className="bg-primary text-white border-none">Core Project</Badge>
-                    <Badge variant="outline" className="border-yellow-400/30 text-yellow-400">Scope Rivals Indie Releases</Badge>
+                    <Badge variant="outline" className="border-yellow-400/30 text-yellow-400">Full Indie Release Planned</Badge>
                   </div>
                   <h3 className="text-3xl md:text-4xl font-display font-bold group-hover:text-primary transition-colors">
                     {axonauts.title}
