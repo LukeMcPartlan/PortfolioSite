@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, Download, Gamepad2, Code2, GraduationCap, Trophy } from "lucide-react";
+import { Gamepad2, Code2, GraduationCap, Trophy, Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -75,17 +75,15 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-col sm:flex-row items-center gap-6 text-muted-foreground"
         >
-          <Link href="/game-design">
-            <Button size="lg" className="h-12 px-8 text-base bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25">
-              View Portfolio <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </Link>
-          <a href="mailto:Lukemcp45@gmail.com">
-            <Button size="lg" variant="outline" className="h-12 px-8 text-base border-white/10 hover:bg-white/5">
-              Contact Me
-            </Button>
+          <a href="mailto:Lukemcp45@gmail.com" className="flex items-center gap-2 hover:text-foreground transition-colors" data-testid="link-email">
+            <Mail className="w-5 h-5" />
+            <span>Lukemcp45@gmail.com</span>
+          </a>
+          <a href="tel:+19143103734" className="flex items-center gap-2 hover:text-foreground transition-colors" data-testid="link-phone">
+            <Phone className="w-5 h-5" />
+            <span>(914) 310-3734</span>
           </a>
         </motion.div>
       </section>
