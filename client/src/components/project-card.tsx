@@ -44,7 +44,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
       
       <CardFooter className="pt-4 border-t border-white/5 gap-2">
-        <Link href={`/project/${project.id}`} className="w-full">
+        <Link href={project.id === "student-portfolios" || project.id === "student-portfolios-gd" ? "/student-portfolios" : `/project/${project.id}`} className="w-full">
           <Button className="w-full bg-secondary hover:bg-primary text-secondary-foreground hover:text-white transition-all duration-300 group-hover:translate-y-0">
             View Details <ArrowRight className="ml-2 w-4 h-4" />
           </Button>

@@ -12,6 +12,7 @@ import ComputerScience from "@/pages/computer-science";
 import Education from "@/pages/education";
 import Esports from "@/pages/esports";
 import ProjectDetail from "@/pages/project-detail";
+import StudentPortfolios from "@/pages/student-portfolios";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
         <Route path="/computer-science" component={ComputerScience} />
         <Route path="/education" component={Education} />
         <Route path="/esports" component={Esports} />
+        <Route path="/student-portfolios" component={StudentPortfolios} />
         <Route path="/project/:id" component={ProjectDetail} />
         <Route component={NotFound} />
       </Switch>
