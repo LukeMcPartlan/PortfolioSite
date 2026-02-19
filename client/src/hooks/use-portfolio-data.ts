@@ -14,6 +14,7 @@ export interface Project {
   demoLink?: string;
   githubLink?: string;
   image?: string;
+  embedUrl?: string;
 }
 
 export interface Experience {
@@ -41,7 +42,9 @@ const PROJECTS: Project[] = [
     longDescription: "A pre-alpha roguelike RPG that combines deck-building mechanics with narrative depth. As the sole developer, I handled all aspects of design, coding (C#), and art assets.",
     category: "Game Design",
     tags: ["Unity", "C#", "Game Design", "Solo Dev"],
-    image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&q=80", // Gaming/fantasy abstract
+    image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&q=80",
+    demoLink: "https://play.unity.com/en/games/ff12099c-e8f8-40e2-b26e-6c3f90204942/axonauts-pre-alpha-demo-003",
+    embedUrl: "https://play.unity.com/en/games/ff12099c-e8f8-40e2-b26e-6c3f90204942/axonauts-pre-alpha-demo-003",
   },
   {
     id: "bazaargen",

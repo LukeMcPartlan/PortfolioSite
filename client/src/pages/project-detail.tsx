@@ -24,20 +24,40 @@ export default function ProjectDetail() {
         </Button>
       </Link>
 
-      <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-        <div className="aspect-video w-full bg-secondary">
-          <img 
-            src={project.image} 
-            alt={project.title} 
-            className="w-full h-full object-cover"
-          />
+      {project.embedUrl ? (
+        <div className="space-y-4">
+          <div>
+            <Badge className="mb-4 bg-primary text-white border-none">{project.category}</Badge>
+            <h1 className="text-4xl md:text-5xl font-display font-bold mb-2">{project.title}</h1>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+            <iframe
+              src={project.embedUrl}
+              title={project.title}
+              className="w-full border-0"
+              style={{ height: "600px" }}
+              allow="fullscreen; autoplay; gamepad"
+              allowFullScreen
+              data-testid="iframe-game-embed"
+            />
+          </div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        <div className="absolute bottom-0 left-0 p-8">
-          <Badge className="mb-4 bg-primary text-white border-none">{project.category}</Badge>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-2">{project.title}</h1>
+      ) : (
+        <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+          <div className="aspect-video w-full bg-secondary">
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+          <div className="absolute bottom-0 left-0 p-8">
+            <Badge className="mb-4 bg-primary text-white border-none">{project.category}</Badge>
+            <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-2">{project.title}</h1>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="md:col-span-2 space-y-6">
