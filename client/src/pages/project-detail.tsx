@@ -120,6 +120,17 @@ export default function ProjectDetail() {
             ))}
           </div>
           
+          {project.extraImages && project.extraImages.length > 0 && (
+            <div className="space-y-4 pt-2">
+              {project.extraImages.map((img, i) => (
+                <div key={i} className="rounded-xl overflow-hidden border border-white/10">
+                  <img src={img.src} alt={img.caption} className="w-full object-cover" />
+                  <p className="text-sm text-muted-foreground p-3 bg-secondary/30">{img.caption}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
           <div className="pt-6">
             <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-4">Technologies Used</h3>
             <div className="flex flex-wrap gap-2">

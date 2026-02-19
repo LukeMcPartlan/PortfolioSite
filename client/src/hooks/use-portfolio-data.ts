@@ -7,6 +7,7 @@ import trumpismsImg from "@assets/image_1771542364908.png";
 import beesImg from "@assets/image_1771542399519.png";
 import bazaargenImg from "@assets/image_1771542435820.png";
 import discordImg from "@assets/discord-bot-preview.png";
+import beesTensorboardImg from "@assets/image_1771542749213.png";
 
 export interface Project {
   id: string;
@@ -19,6 +20,7 @@ export interface Project {
   demoLink?: string;
   githubLink?: string;
   image?: string;
+  extraImages?: { src: string; caption: string }[];
   embedUrl?: string;
   downloadLink?: string;
 }
@@ -64,12 +66,16 @@ const PROJECTS: Project[] = [
   },
   {
     id: "ai-ml-bees",
-    title: "AI/ML Bees",
-    description: "Machine learning project with 90% success rate on complex tasks.",
-    longDescription: "An experimental project using Unity ML-Agents to train agents (bees) to perform complex navigation and resource gathering tasks using reinforcement learning.",
+    title: "ML Agents Unity Bees",
+    description: "Bee agents trained to gather pollen in 3D using PyTorch and Unity ML-Agents. Built a novel reward system that outperformed curriculum-based training.",
+    longDescription: "Bee agents trained to gather pollen in three dimensions in Unity, built on PyTorch and Unity ML-Agents.\n\nThe most technically interesting part of this project was the reward system. I initially used a curriculum approach — pretraining the model to touch the pollen, then running a second training phase to bring the pollen back to the hive. However, I ended up achieving much faster training by bundling all the rewards into a single training run, where each step in the process gives 100x the reward of the previous step.\n\nThe curriculum and step-based systems trained faster at first, but over very long training periods they lost out to the single unified goal with no intermediate follow-up. The TensorBoard logs below show the comparison across training approaches.",
     category: "Computer Science",
-    tags: ["Unity", "ML-Agents", "Python", "C#", "AI"],
+    tags: ["Unity", "ML-Agents", "PyTorch", "Python", "C#", "AI"],
     image: beesImg,
+    githubLink: "https://github.com/LukeMcPartlan/MLAgentsUnityBees",
+    extraImages: [
+      { src: beesTensorboardImg, caption: "TensorBoard training logs — comparing curriculum, step-based, and unified reward approaches" },
+    ],
   },
   {
     id: "java-engine",
