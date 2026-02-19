@@ -2,7 +2,7 @@ import { useRoute } from "wouter";
 import { useProjects } from "@/hooks/use-portfolio-data";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Github, ExternalLink } from "lucide-react";
+import { ArrowLeft, Github, ExternalLink, Play } from "lucide-react";
 import { Link } from "wouter";
 import NotFound from "@/pages/not-found";
 
@@ -30,17 +30,30 @@ export default function ProjectDetail() {
             <Badge className="mb-4 bg-primary text-white border-none">{project.category}</Badge>
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-2">{project.title}</h1>
           </div>
-          <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-            <iframe
-              src={project.embedUrl}
-              title={project.title}
-              className="w-full border-0"
-              style={{ height: "600px" }}
-              allow="fullscreen; autoplay; gamepad"
-              allowFullScreen
-              data-testid="iframe-game-embed"
-            />
-          </div>
+          <a
+            href={project.embedUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+            data-testid="link-play-game"
+          >
+            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group cursor-pointer">
+              <div className="aspect-video w-full bg-secondary">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity"
+                />
+              </div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
+                <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center shadow-lg shadow-primary/30 group-hover:scale-110 transition-transform">
+                  <Play className="w-10 h-10 text-white ml-1" />
+                </div>
+                <span className="text-xl font-bold text-white">Play Axonauts Demo</span>
+                <span className="text-sm text-white/60">Opens on Unity Play</span>
+              </div>
+            </div>
+          </a>
         </div>
       ) : (
         <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
