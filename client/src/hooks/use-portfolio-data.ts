@@ -23,7 +23,7 @@ import gameWowImg from "@assets/game-wow.png";
 import gameHearthstoneImg from "@assets/game-hearthstone.png";
 import gameHotsImg from "@assets/game-hots.png";
 import gameMultiversusImg from "@assets/image_1771559497804.png";
-import gameHaloImg from "@assets/game-halo.png";
+import gamePokemonUniteImg from "@assets/image_1771559524627.png";
 import gameBazaarImg from "@assets/image_1771559369844.png";
 
 export interface Project {
@@ -300,13 +300,13 @@ const PROJECTS: Project[] = [
     image: gameMultiversusImg,
   },
   {
-    id: "halo-infinite",
-    title: "Halo Infinite",
-    description: "Achieved Onyx Rank 1650 in competitive multiplayer.",
-    longDescription: "Reached Onyx rank with a rating of 1650 in Halo Infinite's competitive multiplayer mode.\n\nOnyx is the highest competitive tier in Halo Infinite, requiring consistent high-level play across all game modes. Strong teamwork, map control, and communication skills were essential to maintaining this rank.",
+    id: "pokemon-unite",
+    title: "Pokemon Unite",
+    description: "Achieved Master Rank in the inaugural Season 1.",
+    longDescription: "Reached Master Rank during the inaugural Season 1 of Pokemon Unite, placing among the top competitive players from the very start of the game's ranked scene.\n\nPokemon Unite is a team-based MOBA requiring strong macro awareness, team coordination, and objective control. Achieving Master Rank in the first season — before established metas and guides existed — required rapid adaptation and deep game sense.",
     category: "Competitive Gaming",
-    tags: ["FPS", "Onyx Rank", "Competitive", "Halo"],
-    image: gameHaloImg,
+    tags: ["MOBA", "Master Rank", "Season 1", "Pokemon"],
+    image: gamePokemonUniteImg,
   },
   {
     id: "the-bazaar",
