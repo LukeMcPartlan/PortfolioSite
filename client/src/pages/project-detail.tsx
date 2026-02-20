@@ -143,57 +143,51 @@ export default function ProjectDetail() {
           </div>
         </div>
 
-        <div className="space-y-6">
-          <div className="glass-card p-6 rounded-xl space-y-4">
-            <h3 className="font-bold text-lg">Project Links</h3>
+        {(project.projectLinks?.length || project.githubLink || project.demoLink || project.downloadLink) && (
+          <div className="space-y-6">
+            <div className="glass-card p-6 rounded-xl space-y-4">
+              <h3 className="font-bold text-lg">Project Links</h3>
 
-            {project.projectLinks && project.projectLinks.length > 0 ? (
-              project.projectLinks.map((pl, idx) => (
-                <a key={idx} href={pl.url} target="_blank" rel="noopener noreferrer" className="block" data-testid={`link-project-${idx}`}>
-                  <Button className="w-full gap-2" variant={idx === 0 ? "default" : "outline"}>
-                    <ExternalLink className="w-4 h-4" /> {pl.label}
-                  </Button>
-                </a>
-              ))
-            ) : (
-              <>
-                {project.githubLink ? (
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="block">
-                    <Button className="w-full gap-2" variant="outline">
-                      {project.githubLink.includes("github.com") ? (
-                        <><Github className="w-4 h-4" /> View Source</>
-                      ) : (
-                        <><FolderOpen className="w-4 h-4" /> View Source Files</>
-                      )}
+              {project.projectLinks && project.projectLinks.length > 0 ? (
+                project.projectLinks.map((pl, idx) => (
+                  <a key={idx} href={pl.url} target="_blank" rel="noopener noreferrer" className="block" data-testid={`link-project-${idx}`}>
+                    <Button className="w-full gap-2" variant={idx === 0 ? "default" : "outline"}>
+                      <ExternalLink className="w-4 h-4" /> {pl.label}
                     </Button>
                   </a>
-                ) : (
-                   <Button disabled className="w-full gap-2 opacity-50 cursor-not-allowed" variant="outline">
-                      <Github className="w-4 h-4" /> Source Private
-                    </Button>
-                )}
+                ))
+              ) : (
+                <>
+                  {project.githubLink && (
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button className="w-full gap-2" variant="outline">
+                        {project.githubLink.includes("github.com") ? (
+                          <><Github className="w-4 h-4" /> View Source</>
+                        ) : (
+                          <><FolderOpen className="w-4 h-4" /> View Source Files</>
+                        )}
+                      </Button>
+                    </a>
+                  )}
 
-                {project.downloadLink ? (
-                  <a href={project.downloadLink} target="_blank" rel="noopener noreferrer" className="block">
-                    <Button className="w-full gap-2">
-                      <Download className="w-4 h-4" /> Download on CurseForge
-                    </Button>
-                  </a>
-                ) : project.demoLink ? (
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="block">
-                    <Button className="w-full gap-2">
-                      <ExternalLink className="w-4 h-4" /> Live Demo
-                    </Button>
-                  </a>
-                ) : (
-                   <Button disabled className="w-full gap-2 opacity-50 cursor-not-allowed">
-                      <ExternalLink className="w-4 h-4" /> Demo Unavailable
-                    </Button>
-                )}
-              </>
-            )}
+                  {project.downloadLink ? (
+                    <a href={project.downloadLink} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button className="w-full gap-2">
+                        <Download className="w-4 h-4" /> Download on CurseForge
+                      </Button>
+                    </a>
+                  ) : project.demoLink ? (
+                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="block">
+                      <Button className="w-full gap-2">
+                        <ExternalLink className="w-4 h-4" /> Live Demo
+                      </Button>
+                    </a>
+                  ) : null}
+                </>
+              )}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
