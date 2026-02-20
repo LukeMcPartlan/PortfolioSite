@@ -235,11 +235,14 @@ const PROJECTS: Project[] = [
   {
     id: "extended-day",
     title: "Extended Day Programs",
-    description: "After-school programs covering robotics, Blender 3D, math tutoring, technology skills, office tools, and 3D Tinkercad engineering.",
-    longDescription: "Ran a range of Extended Day Programs providing after-school instruction across multiple disciplines:\n\n- Robotics After School — Students built and programmed robots, extending the hands-on engineering experience from the regular curriculum into after-school projects.\n\n- Math Tutoring — Provided targeted math support for students who needed extra help or wanted to get ahead, covering algebra and foundational problem-solving skills.\n\n- Blender Class — Taught 3D modeling and animation using Blender, giving students creative tools used in game development and digital media.\n\n- Technology Tutoring — One-on-one and small group sessions helping students build digital literacy and confidence with modern technology.\n\n- Office Tools Tutoring — Guided students through essential productivity software including word processing, spreadsheets, and presentations.\n\n- 3D Tinkercad for Engineering — Students used Tinkercad to design 3D models for engineering projects, learning spatial reasoning and CAD fundamentals.",
+    description: "After-school programs covering robotics, Blender 3D, math tutoring, gaming club, student government, esports coaching, and more.",
+    longDescription: "Ran a range of Extended Day Programs providing after-school instruction and activities across multiple disciplines:\n\n- Robotics After School — Students built and programmed robots, extending the hands-on engineering experience from the regular curriculum into after-school projects.\n\n- Math Tutoring — Provided targeted math support for students who needed extra help or wanted to get ahead, covering algebra and foundational problem-solving skills.\n\n- Blender Class — Taught 3D modeling and animation using Blender, giving students creative tools used in game development and digital media.\n\n- Technology Tutoring — One-on-one and small group sessions helping students build digital literacy and confidence with modern technology.\n\n- Office Tools Tutoring — Guided students through essential productivity software including word processing, spreadsheets, and presentations.\n\n- 3D Tinkercad for Engineering — Students used Tinkercad to design 3D models for engineering projects, learning spatial reasoning and CAD fundamentals.\n\n- Gaming Club — Organized and supervised an after-school gaming club, providing a structured social space for students to connect through gaming.\n\n- Student Government — Advised the student government program, helping students develop leadership, communication, and organizational skills.\n\n- Esports Coaching — Coached competitive esports teams after school, building the program that went on to win 3 interstate championships.",
     category: "Education",
-    tags: ["Robotics", "Blender", "Math Tutoring", "Tinkercad", "Office Tools", "After-School"],
+    tags: ["Robotics", "Blender", "Math Tutoring", "Tinkercad", "Gaming Club", "Student Gov", "Esports", "After-School"],
     image: eduExtendedDayImg,
+    projectLinks: [
+      { label: "Esports Coaching Details", url: "/project/esports-coaching" },
+    ],
   },
   {
     id: "overwatch",
