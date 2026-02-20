@@ -172,6 +172,9 @@ const PROJECTS: Project[] = [
     tags: ["Node.js", "OpenAI API", "Discord.js", "GPT-3", "JavaScript"],
     image: discordImg,
     githubLink: "https://github.com/LukeMcPartlan/DiscordRoastBot",
+    projectLinks: [
+      { label: "Join Discord Server (bot currently offline)", url: "https://discord.gg/fRFZSrVvVy" },
+    ],
     extraImages: [
       { src: roasterConsentImg, caption: "Ryan consenting to have his messages collected for the roaster" },
       { src: roasterColorImg, caption: "The bot roasting Ryan's favorite color — and GPT-3 interpreting 'Ok so you dont know' as a 2.4 inch attitude problem" },
