@@ -152,10 +152,10 @@ const PROJECTS: Project[] = [
   {
     id: "competitive-trumpisms",
     title: "Competitive Trumpisms",
-    description: "Full-stack web app where users rate Trump quotes in head-to-head Elo-ranked matchups across categories.",
-    longDescription: "Competitive Trumpisms is a full-stack web application that lets users rate the most iconic, funny, and outrageous Trump quotes in head-to-head matchups. Users vote on pairs of quotes within three categories — Iconic, Funny, and Evil — and after 10 votes, unlock an Elo-based leaderboard showing how the community ranks each quote.\n\nThe app features category-based voting, real-time vote tracking, and a competitive ranking system inspired by chess Elo ratings. Built with a modern web stack including React, Node.js, and PostgreSQL.",
+    description: "Full-stack web app built on Replit where users rate Trump quotes in head-to-head Elo-ranked matchups. Had active users before database losses.",
+    longDescription: "Competitive Trumpisms is a full-stack web application built entirely on Replit that lets users rate the most iconic, funny, and outrageous Trump quotes in head-to-head matchups. Users vote on pairs of quotes within three categories — Iconic, Funny, and Evil — and after 10 votes, unlock an Elo-based leaderboard showing how the community ranks each quote.\n\nThe app features category-based voting, real-time vote tracking, and a competitive ranking system inspired by chess Elo ratings. Built with a modern web stack including React, Node.js, and PostgreSQL — all hosted and developed on Replit.\n\nThe app attracted active users, but unfortunately Replit dropped the database multiple times, resulting in lost user data and vote history. Despite the setbacks, the project demonstrated a complete full-stack workflow from concept to deployed product.",
     category: "Computer Science",
-    tags: ["React", "Node.js", "PostgreSQL", "Web Dev", "Elo Rating"],
+    tags: ["React", "Node.js", "PostgreSQL", "Replit", "Elo Rating"],
     image: trumpismsImg,
     demoLink: "https://trump-rating--lukemcp45.replit.app/",
   },
