@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Gamepad2, Code2, GraduationCap, Trophy, Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
+import profileImg from "@assets/image_1771613337949.png";
 
 export default function Home() {
   const categories = [
@@ -47,10 +48,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-primary/20 p-1 mb-8 shadow-2xl shadow-primary/20"
         >
-          {/* Avatar Placeholder - In real app use actual photo */}
-          <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-800 to-black flex items-center justify-center text-3xl font-display font-bold text-white overflow-hidden">
-            <span className="bg-clip-text text-transparent bg-gradient-to-br from-primary to-white">LM</span>
-          </div>
+          <img src={profileImg} alt="Luke McPartlan-Alvarez" className="w-full h-full rounded-full object-cover" />
         </motion.div>
 
         <motion.h1 
