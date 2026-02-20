@@ -1,6 +1,6 @@
 import { useProjects } from "@/hooks/use-portfolio-data";
 import { ProjectCard } from "@/components/project-card";
-import { GraduationCap, Scroll, Gamepad2, ExternalLink } from "lucide-react";
+import { GraduationCap, Scroll, Gamepad2, ExternalLink, Briefcase } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -67,6 +67,52 @@ export default function Education() {
         </div>
 
         <div className="space-y-8">
+          <Card className="glass-card">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-xl font-display">
+                <Briefcase className="w-5 h-5 text-primary" />
+                Work Experience
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="border-l-2 border-primary/30 pl-4">
+                <h4 className="font-bold text-foreground">East Ramapo School District</h4>
+                <p className="text-xs text-primary font-medium">2024 – 2026</p>
+                <p className="text-sm text-muted-foreground">High School CS & Game Dev Teacher</p>
+              </div>
+              <div className="border-l-2 border-primary/30 pl-4">
+                <h4 className="font-bold text-foreground">Yonkers Public Schools</h4>
+                <p className="text-xs text-primary font-medium">2023 – 2024</p>
+                <p className="text-sm text-muted-foreground">Math Teacher (Algebra)</p>
+              </div>
+              <div className="border-l-2 border-primary/30 pl-4">
+                <h4 className="font-bold text-foreground">SUNY Orange College</h4>
+                <p className="text-xs text-primary font-medium">2023 – 2024</p>
+                <p className="text-sm text-muted-foreground">CS Adjunct Professor</p>
+              </div>
+              <div className="border-l-2 border-primary/30 pl-4">
+                <h4 className="font-bold text-foreground">Middletown City School District</h4>
+                <p className="text-xs text-primary font-medium">2020 – 2023</p>
+                <p className="text-sm text-muted-foreground">Computer Science Teacher</p>
+              </div>
+              <div className="border-l-2 border-muted-foreground/30 pl-4">
+                <h4 className="font-bold text-foreground">Esports Coaching</h4>
+                <p className="text-xs text-primary font-medium">2020 – 2023, 2024 – 2026</p>
+                <p className="text-sm text-muted-foreground">Full-time (gap year during Yonkers)</p>
+              </div>
+              <div className="border-l-2 border-muted-foreground/30 pl-4">
+                <h4 className="font-bold text-foreground">Robotics Summer Camp</h4>
+                <p className="text-xs text-primary font-medium">Summers 2020 – 2023</p>
+                <p className="text-sm text-muted-foreground">At Middletown City School District</p>
+              </div>
+              <div className="border-l-2 border-muted-foreground/30 pl-4">
+                <h4 className="font-bold text-foreground">Extended Day Programs & Tutoring</h4>
+                <p className="text-xs text-primary font-medium">2020 – 2026</p>
+                <p className="text-sm text-muted-foreground">Full-time, ongoing</p>
+              </div>
+            </CardContent>
+          </Card>
+
           <Card className="glass-card">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-xl font-display">
