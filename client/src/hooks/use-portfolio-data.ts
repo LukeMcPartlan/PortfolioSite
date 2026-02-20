@@ -298,10 +298,10 @@ const PROJECTS: Project[] = [
   {
     id: "hearthstone",
     title: "Hearthstone",
-    description: "Peak Rank 1500 in the Americas Region.",
-    longDescription: "Achieved a peak competitive rank of 1500 in the Americas Region in Hearthstone, Blizzard's digital card game.\n\nWon $100 in a local Hearthstone tournament at Encore Esports in New Rochelle.\n\nCompetitive Hearthstone requires deep understanding of meta-game analysis, probability, and strategic decision-making under uncertainty — skills that overlap heavily with the analytical thinking taught in CS and math education.",
+    description: "Interviewed industry leaders such as Ben Brode, Dean Ayala, and David Kosak.",
+    longDescription: "Interviewed industry leaders in the Hearthstone community, including Ben Brode (Game Director), Dean Ayala (Lead Designer), and David Kosak (Lead Mission Designer).\n\nWon $100 in a local Hearthstone tournament at Encore Esports in New Rochelle.\n\nCompetitive Hearthstone requires deep understanding of meta-game analysis, probability, and strategic decision-making under uncertainty — skills that overlap heavily with the analytical thinking taught in CS and math education.",
     category: "Competitive Gaming",
-    tags: ["Card Game", "Rank 1500", "Americas", "Strategy"],
+    tags: ["Card Game", "Interviews", "Strategy"],
     image: gameHearthstoneImg,
   },
   {
@@ -398,7 +398,7 @@ const ACHIEVEMENTS: Achievement[] = [
   { id: "ow-rank", game: "Overwatch", title: "Top 500", detail: "Americas Region", category: "Personal" },
   { id: "dbd", game: "Dead By Daylight", title: "Max Rank", detail: "$200 tournament earnings", category: "Personal" },
   { id: "wow", game: "World of Warcraft", title: "Raid Leader #1 Guild", detail: "Garona Server, multiple server firsts", category: "Personal" },
-  { id: "hearthstone", game: "Hearthstone", title: "Peak Rank 1500", detail: "Americas Region", category: "Personal" },
+  { id: "hearthstone", game: "Hearthstone", title: "Industry Interviews", detail: "Ben Brode, Dean Ayala, David Kosak", category: "Personal" },
   { id: "hots", game: "Heroes of the Storm", title: "Top 64 Tespa Nationals", detail: "Highest ranked Diablo in Americas", category: "Personal" },
   { id: "multiversus", game: "Multi-Versus", title: "Top 7000 Superman", detail: "Top 0.5 percentile globally", category: "Personal" },
   { id: "halo", game: "Halo Infinite", title: "Onyx Rank 1650", category: "Personal" }
