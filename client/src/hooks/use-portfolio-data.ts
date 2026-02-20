@@ -334,10 +334,10 @@ const PROJECTS: Project[] = [
   {
     id: "the-bazaar",
     title: "The Bazaar",
-    description: "Legendary 103 ranked player. Winner of the first-ever officially hosted Bazaar tournament.",
-    longDescription: "Achieved Legendary 103 rank in The Bazaar, placing among the top competitive players globally.\n\nWon the first-ever officially hosted Bazaar tournament, marking a milestone in the game's competitive scene. As a Grand Founder, this achievement reflects deep mastery of the game's hero mechanics, economy management, and strategic decision-making from the earliest days of the competitive meta.",
+    description: "103rd highest ranked player in Season 4. Winner of the first-ever officially hosted Bazaar tournament.",
+    longDescription: "Reached the 103rd highest rank in the 4th ranked season of The Bazaar, placing among the top competitive players globally.\n\nWon the first-ever officially hosted Bazaar tournament, marking a milestone in the game's competitive scene. As a Grand Founder, this achievement reflects deep mastery of the game's hero mechanics, economy management, and strategic decision-making from the earliest days of the competitive meta.",
     category: "Competitive Gaming",
-    tags: ["Strategy", "Legendary 103", "Tournament Winner", "Grand Founder"],
+    tags: ["Strategy", "Rank #103 Season 4", "Tournament Winner", "Grand Founder"],
     image: gameBazaarImg,
   }
 ];
