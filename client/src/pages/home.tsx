@@ -27,10 +27,10 @@ export default function Home() {
       color: "text-green-400"
     },
     {
-      title: "Esports",
+      title: "Competitive Gaming",
       icon: Trophy,
       desc: "Coaching & competitive achievements",
-      href: "/esports",
+      href: "/competitive-gaming",
       color: "text-yellow-400"
     }
   ];

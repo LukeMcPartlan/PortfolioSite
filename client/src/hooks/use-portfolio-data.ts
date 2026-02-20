@@ -16,13 +16,21 @@ import eduMiddletownImg from "@assets/edu-middletown.png";
 import eduEsportsImg from "@assets/edu-esports-coaching.png";
 import eduRoboticsImg from "@assets/edu-robotics-camp.png";
 import eduExtendedDayImg from "@assets/edu-extended-day.png";
+import gameOverwatchImg from "@assets/game-overwatch.png";
+import gameRocketLeagueImg from "@assets/game-rocket-league.png";
+import gameDbdImg from "@assets/game-dead-by-daylight.png";
+import gameWowImg from "@assets/game-wow.png";
+import gameHearthstoneImg from "@assets/game-hearthstone.png";
+import gameHotsImg from "@assets/game-hots.png";
+import gameMultiversusImg from "@assets/game-multiversus.png";
+import gameHaloImg from "@assets/game-halo.png";
 
 export interface Project {
   id: string;
   title: string;
   description: string;
   longDescription?: string;
-  category: "Game Development" | "Computer Science" | "Education" | "Esports";
+  category: "Game Development" | "Computer Science" | "Education" | "Competitive Gaming";
   tags: string[];
   link?: string;
   demoLink?: string;
@@ -40,7 +48,7 @@ export interface Experience {
   company: string;
   period: string;
   description: string[];
-  category: "Education" | "Esports" | "Other";
+  category: "Education" | "Competitive Gaming" | "Other";
 }
 
 export interface Achievement {
@@ -226,6 +234,78 @@ const PROJECTS: Project[] = [
     category: "Education",
     tags: ["After-School", "CS Education", "Mentoring", "Student Support"],
     image: eduExtendedDayImg,
+  },
+  {
+    id: "overwatch",
+    title: "Overwatch",
+    description: "Top 500 Americas Region. OWL Season 1 VIP with backstage coaching access.",
+    longDescription: "Reached Top 500 in the Americas Region in Overwatch, placing in the highest tier of competitive play.\n\nAlso served as a coaching VIP during Overwatch League Season 1, receiving backstage access and meeting professional players and industry figures. This experience combined high-level competitive play with behind-the-scenes exposure to professional esports operations and team coaching structures.",
+    category: "Competitive Gaming",
+    tags: ["FPS", "Top 500", "OWL", "Coaching"],
+    image: gameOverwatchImg,
+  },
+  {
+    id: "rocket-league",
+    title: "Rocket League",
+    description: "Coached varsity and JV teams to 3 interstate championship trophies.",
+    longDescription: "Coached high school Rocket League teams at the varsity and JV levels, leading both squads to interstate championship victories.\n\nThe varsity team won the Fall Season Championship, and the JV team won the Winter Season Championship. In total, the program earned 3 interstate first-place trophies. Players on the team demonstrated dramatic improvement — 90% rose from below the 40th percentile to above the 80th percentile in competitive rankings globally.\n\nThe Rocket League program was the foundation of the district's esports initiative and served as proof that competitive gaming could drive student engagement and academic improvement.",
+    category: "Competitive Gaming",
+    tags: ["Coaching", "Championships", "Varsity", "JV"],
+    image: gameRocketLeagueImg,
+  },
+  {
+    id: "dead-by-daylight",
+    title: "Dead By Daylight",
+    description: "Achieved max rank with $200 in tournament earnings.",
+    longDescription: "Reached the maximum competitive rank in Dead By Daylight and competed in tournaments, earning $200 in prize money.\n\nDead By Daylight's asymmetric horror gameplay requires strong game sense, map knowledge, and adaptability — skills that translated well into both competitive play and understanding game design from a player's perspective.",
+    category: "Competitive Gaming",
+    tags: ["Horror", "Max Rank", "Tournaments", "$200 Earnings"],
+    image: gameDbdImg,
+  },
+  {
+    id: "world-of-warcraft",
+    title: "World of Warcraft",
+    description: "Raid Leader of the #1 guild on Garona Server with multiple server-first kills.",
+    longDescription: "Served as Raid Leader of the top-ranked guild on Garona Server in World of Warcraft, coordinating 25-player raid teams to achieve multiple server-first boss kills.\n\nRaid leading at this level required managing complex group dynamics, developing and communicating strategies for multi-phase encounters, and maintaining team morale across progression pushes. The leadership and organizational skills developed here directly informed later coaching and teaching work.",
+    category: "Competitive Gaming",
+    tags: ["MMO", "Raid Leader", "#1 Guild", "Server Firsts"],
+    image: gameWowImg,
+  },
+  {
+    id: "hearthstone",
+    title: "Hearthstone",
+    description: "Peak Rank 1500 in the Americas Region.",
+    longDescription: "Achieved a peak competitive rank of 1500 in the Americas Region in Hearthstone, Blizzard's digital card game.\n\nCompetitive Hearthstone requires deep understanding of meta-game analysis, probability, and strategic decision-making under uncertainty — skills that overlap heavily with the analytical thinking taught in CS and math education.",
+    category: "Competitive Gaming",
+    tags: ["Card Game", "Rank 1500", "Americas", "Strategy"],
+    image: gameHearthstoneImg,
+  },
+  {
+    id: "heroes-of-the-storm",
+    title: "Heroes of the Storm",
+    description: "Top 64 Tespa Nationals. Highest ranked Diablo player in the Americas.",
+    longDescription: "Competed in Tespa Nationals for Heroes of the Storm, reaching the Top 64 in the collegiate tournament bracket.\n\nAlso held the distinction of being the highest-ranked Diablo player in the Americas Region, demonstrating deep mastery of a niche character in a team-based MOBA environment. This required both individual mechanical skill and strong team coordination.",
+    category: "Competitive Gaming",
+    tags: ["MOBA", "Top 64 Nationals", "Tespa", "Americas #1 Diablo"],
+    image: gameHotsImg,
+  },
+  {
+    id: "multiversus",
+    title: "MultiVersus",
+    description: "Top 0.5% globally as Superman (Rank ~7000).",
+    longDescription: "Reached the top 0.5 percentile globally in MultiVersus as Superman, ranking approximately 7000th worldwide.\n\nMultiVersus is a platform fighter that demands quick reflexes, matchup knowledge, and adaptability. Competing at this level demonstrated strong mechanical skill in a fast-paced competitive environment.",
+    category: "Competitive Gaming",
+    tags: ["Platform Fighter", "Top 0.5%", "Superman", "Global Ranking"],
+    image: gameMultiversusImg,
+  },
+  {
+    id: "halo-infinite",
+    title: "Halo Infinite",
+    description: "Achieved Onyx Rank 1650 in competitive multiplayer.",
+    longDescription: "Reached Onyx rank with a rating of 1650 in Halo Infinite's competitive multiplayer mode.\n\nOnyx is the highest competitive tier in Halo Infinite, requiring consistent high-level play across all game modes. Strong teamwork, map control, and communication skills were essential to maintaining this rank.",
+    category: "Competitive Gaming",
+    tags: ["FPS", "Onyx Rank", "Competitive", "Halo"],
+    image: gameHaloImg,
   }
 ];
 

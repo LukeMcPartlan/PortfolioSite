@@ -12,7 +12,7 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
     { href: "/game-design", label: "Game Development", icon: Gamepad2 },
     { href: "/computer-science", label: "Computer Science", icon: Code2 },
     { href: "/education", label: "Education", icon: GraduationCap },
-    { href: "/esports", label: "Esports", icon: Trophy },
+    { href: "/competitive-gaming", label: "Competitive Gaming", icon: Trophy },
   ];
 
   return (
