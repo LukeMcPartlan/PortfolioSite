@@ -20,7 +20,7 @@ import gameOverwatchImg from "@assets/556089441_24599654556322531_25292474968924
 import gameRocketLeagueImg from "@assets/game-rocket-league.png";
 import gameDbdImg from "@assets/image_1771612539222.png";
 import gameWowImg from "@assets/image_1771563608224.png";
-import gameHearthstoneImg from "@assets/game-hearthstone.png";
+import gameHearthstoneImg from "@assets/image_1771620123999.png";
 import gameHotsImg from "@assets/game-hots.png";
 import gameMultiversusImg from "@assets/image_1771559497804.png";
 import gamePokemonUniteImg from "@assets/image_1771559524627.png";
