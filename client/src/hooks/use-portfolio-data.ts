@@ -16,7 +16,7 @@ import eduMiddletownImg from "@assets/edu-middletown.png";
 import eduEsportsImg from "@assets/edu-esports-coaching.png";
 import eduRoboticsImg from "@assets/edu-robotics-camp.png";
 import eduExtendedDayImg from "@assets/edu-extended-day.png";
-import gameOverwatchImg from "@assets/game-overwatch.png";
+import gameOverwatchImg from "@assets/image_1771559641780.png";
 import gameRocketLeagueImg from "@assets/game-rocket-league.png";
 import gameDbdImg from "@assets/game-dead-by-daylight.png";
 import gameWowImg from "@assets/game-wow.png";
