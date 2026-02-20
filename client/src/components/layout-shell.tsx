@@ -125,7 +125,7 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
             </div>
             
             <div className="flex space-x-6">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://github.com/LukeMcPartlan" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 <span className="sr-only">GitHub</span>
                 <Github className="w-6 h-6" />
               </a>
