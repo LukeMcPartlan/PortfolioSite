@@ -25,6 +25,7 @@ import gameHotsImg from "@assets/game-hots.png";
 import gameMultiversusImg from "@assets/image_1771559497804.png";
 import gamePokemonUniteImg from "@assets/image_1771559524627.png";
 import gameBazaarImg from "@assets/image_1771559369844.png";
+import owForumImg from "@assets/image_1771615364927.png";
 import roasterConsentImg from "@assets/image_1771561756876.png";
 import roasterColorImg from "@assets/image_1771561763669.png";
 import roasterGibberishImg from "@assets/image_1771561771261.png";
@@ -263,10 +264,13 @@ const PROJECTS: Project[] = [
     id: "overwatch",
     title: "Overwatch",
     description: "Top 500 Americas Region. OWL Season 1 VIP with backstage coaching access.",
-    longDescription: "Reached Top 500 in the Americas Region in Overwatch, placing in the highest tier of competitive play.\n\nAlso served as a coaching VIP during Overwatch League Season 1, receiving backstage access and meeting professional players and industry figures. This experience combined high-level competitive play with behind-the-scenes exposure to professional esports operations and team coaching structures.",
+    longDescription: "Reached Top 500 in the Americas Region in Overwatch, placing in the highest tier of competitive play.\n\nAlso served as a coaching VIP during Overwatch League Season 1, receiving backstage access and meeting professional players and industry figures. This experience combined high-level competitive play with behind-the-scenes exposure to professional esports operations and team coaching structures.\n\nAuthored one of the highest rated and most viewed forum posts of all time on the Overwatch Competitive Discussion forums, generating thousands of replies and over 100,000 views.",
     category: "Competitive Gaming",
     tags: ["FPS", "Top 500", "OWL", "Coaching"],
     image: gameOverwatchImg,
+    extraImages: [
+      { src: owForumImg, caption: "One of the highest rated and most viewed posts of all time on the Overwatch Competitive Discussion forums" },
+    ],
   },
   {
     id: "rocket-league",
