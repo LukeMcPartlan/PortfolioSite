@@ -18,7 +18,7 @@ import eduRoboticsImg from "@assets/image_1771560914359.png";
 import eduExtendedDayImg from "@assets/edu-extended-day.png";
 import gameOverwatchImg from "@assets/556089441_24599654556322531_2529247496892471526_n_1771560118154.png";
 import gameRocketLeagueImg from "@assets/game-rocket-league.png";
-import gameDbdImg from "@assets/game-dead-by-daylight.png";
+import gameDbdImg from "@assets/image_1771612539222.png";
 import gameWowImg from "@assets/image_1771563608224.png";
 import gameHearthstoneImg from "@assets/game-hearthstone.png";
 import gameHotsImg from "@assets/game-hots.png";
