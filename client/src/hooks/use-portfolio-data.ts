@@ -10,7 +10,7 @@ import discordImg from "@assets/discord-bot-preview.png";
 import beesTensorboardImg from "@assets/image_1771542749213.png";
 import crownsImg from "@assets/crowns-of-power-preview.png";
 import eduEastRamapoImg from "@assets/edu-east-ramapo.png";
-import eduYonkersImg from "@assets/edu-yonkers.png";
+import eduYonkersImg from "@assets/yonkers-math-students.png";
 import eduSunyImg from "@assets/edu-suny-orange.png";
 import eduMiddletownImg from "@assets/edu-middletown.png";
 import eduEsportsImg from "@assets/image_1771613956073.png";
