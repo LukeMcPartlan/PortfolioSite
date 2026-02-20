@@ -112,10 +112,10 @@ const PROJECTS: Project[] = [
     longDescription: "A foundational computer science project exploring the architecture of game engines. Implements rendering loops, physics detection, and entity management without external game libraries. A standout achievement: the total file size for all games built in this engine are under a megabyte, demonstrating extreme efficiency and deep understanding of low-level programming.",
     category: "Game Development",
     tags: ["Java", "Engine Architecture", "Computer Graphics"],
-    image: "https://img.youtube.com/vi/Q5191kdaQ3E/maxresdefault.jpg",
-    demoLink: "https://www.youtube.com/watch?v=Q5191kdaQ3E",
+    image: "https://img.youtube.com/vi/AheMgfaA2Ik/maxresdefault.jpg",
     githubLink: "https://www.dropbox.com/scl/fo/ko8e5aqrjel3d800hvus0/AOwuwE3TPtOg_-kO8ZKqTaE?rlkey=w70vvjv5vy8s4u8dtflbgpqx7&st=jipegznd&dl=0",
-    embedUrl: "https://www.youtube.com/embed/Q5191kdaQ3E",
+    embedUrl: "https://www.youtube.com/embed/AheMgfaA2Ik",
+    demoLink: "https://www.youtube.com/watch?v=Q5191kdaQ3E",
   },
   {
     id: "student-portfolios",
