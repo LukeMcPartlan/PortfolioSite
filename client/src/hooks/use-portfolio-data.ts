@@ -307,10 +307,10 @@ const PROJECTS: Project[] = [
   {
     id: "heroes-of-the-storm",
     title: "Heroes of the Storm",
-    description: "Top 64 Tespa Nationals. Highest ranked Diablo player in the Americas.",
-    longDescription: "Competed in Tespa Nationals for Heroes of the Storm, reaching the Top 64 in the collegiate tournament bracket.\n\nAlso held the distinction of being the highest-ranked Diablo player in the Americas Region, demonstrating deep mastery of a niche character in a team-based MOBA environment. This required both individual mechanical skill and strong team coordination.",
+    description: "Top 64 Tespa Nationals. Diamond ranked Diablo player, Season 1.",
+    longDescription: "Competed in Tespa Nationals for Heroes of the Storm, reaching the Top 64 in the collegiate tournament bracket.\n\nAlso achieved Diamond rank as a Diablo player in Season 1, demonstrating deep mastery of a niche character in a team-based MOBA environment. This required both individual mechanical skill and strong team coordination.",
     category: "Competitive Gaming",
-    tags: ["MOBA", "Top 64 Nationals", "Tespa", "Americas #1 Diablo"],
+    tags: ["MOBA", "Top 64 Nationals", "Tespa", "Diamond Diablo"],
     image: gameHotsImg,
   },
   {
@@ -399,7 +399,7 @@ const ACHIEVEMENTS: Achievement[] = [
   { id: "dbd", game: "Dead By Daylight", title: "Max Rank", detail: "$200 tournament earnings", category: "Personal" },
   { id: "wow", game: "World of Warcraft", title: "Raid Leader #1 Guild", detail: "Garona Server, multiple server firsts", category: "Personal" },
   { id: "hearthstone", game: "Hearthstone", title: "Industry Interviews", detail: "Ben Brode, Dean Ayala, David Kosak", category: "Personal" },
-  { id: "hots", game: "Heroes of the Storm", title: "Top 64 Tespa Nationals", detail: "Highest ranked Diablo in Americas", category: "Personal" },
+  { id: "hots", game: "Heroes of the Storm", title: "Top 64 Tespa Nationals", detail: "Diamond ranked Diablo, Season 1", category: "Personal" },
   { id: "multiversus", game: "Multi-Versus", title: "Top 7000 Superman", detail: "Top 0.5 percentile globally", category: "Personal" },
   { id: "halo", game: "Halo Infinite", title: "Onyx Rank 1650", category: "Personal" }
 ];
