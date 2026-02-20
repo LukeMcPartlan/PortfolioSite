@@ -299,7 +299,7 @@ const PROJECTS: Project[] = [
     id: "hearthstone",
     title: "Hearthstone",
     description: "Peak Rank 1500 in the Americas Region.",
-    longDescription: "Achieved a peak competitive rank of 1500 in the Americas Region in Hearthstone, Blizzard's digital card game.\n\nCompetitive Hearthstone requires deep understanding of meta-game analysis, probability, and strategic decision-making under uncertainty — skills that overlap heavily with the analytical thinking taught in CS and math education.",
+    longDescription: "Achieved a peak competitive rank of 1500 in the Americas Region in Hearthstone, Blizzard's digital card game.\n\nWon $100 in a local Hearthstone tournament at Encore Esports in New Rochelle.\n\nCompetitive Hearthstone requires deep understanding of meta-game analysis, probability, and strategic decision-making under uncertainty — skills that overlap heavily with the analytical thinking taught in CS and math education.",
     category: "Competitive Gaming",
     tags: ["Card Game", "Rank 1500", "Americas", "Strategy"],
     image: gameHearthstoneImg,
