@@ -1,11 +1,15 @@
 import { useProjects } from "@/hooks/use-portfolio-data";
 import { ProjectCard } from "@/components/project-card";
-import { GraduationCap, Scroll } from "lucide-react";
+import { GraduationCap, Scroll, Gamepad2, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 export default function Education() {
   const { data: projects } = useProjects();
-  const educationProjects = projects?.filter(p => p.category === "Education") || [];
+  const educationProjects = projects?.filter(p => p.category === "Education" && p.id !== "student-portfolios") || [];
+  const studentPortfolios = projects?.find(p => p.id === "student-portfolios");
 
   return (
     <div className="space-y-12">
@@ -20,6 +24,38 @@ export default function Education() {
           </p>
         </div>
       </div>
+
+      {studentPortfolios && (
+        <Link href="/student-portfolios">
+          <Card className="glass-card overflow-visible cursor-pointer hover:border-primary/50 transition-colors" data-testid="card-student-portfolios-highlight">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Gamepad2 className="w-6 h-6 text-primary" />
+                  </div>
+                  <Badge variant="secondary">Featured</Badge>
+                </div>
+                <h2 className="text-2xl font-display font-bold" data-testid="text-student-portfolios-title">{studentPortfolios.title}</h2>
+                <p className="text-muted-foreground leading-relaxed">{studentPortfolios.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {studentPortfolios.tags.map(tag => (
+                    <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
+                  ))}
+                </div>
+                <Button variant="outline" className="gap-2 mt-2">
+                  <ExternalLink className="w-4 h-4" /> View Student Work
+                </Button>
+              </div>
+              <div className="rounded-lg overflow-hidden border border-white/10 aspect-video bg-secondary">
+                {studentPortfolios.image && (
+                  <img src={studentPortfolios.image} alt={studentPortfolios.title} className="w-full h-full object-cover" />
+                )}
+              </div>
+            </div>
+          </Card>
+        </Link>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
