@@ -98,7 +98,7 @@ export default function Education() {
               <div className="border-l-2 border-muted-foreground/30 pl-4">
                 <h4 className="font-bold text-foreground">Esports Coaching</h4>
                 <p className="text-xs text-primary font-medium">2020 – 2023, 2024 – 2026</p>
-                <p className="text-sm text-muted-foreground">Full-time (gap year during Yonkers)</p>
+                <p className="text-sm text-muted-foreground">9 hours/week (gap year during Yonkers)</p>
               </div>
               <div className="border-l-2 border-muted-foreground/30 pl-4">
                 <h4 className="font-bold text-foreground">Robotics Summer Camp</h4>
@@ -108,7 +108,7 @@ export default function Education() {
               <div className="border-l-2 border-muted-foreground/30 pl-4">
                 <h4 className="font-bold text-foreground">Extended Day Programs & Tutoring</h4>
                 <p className="text-xs text-primary font-medium">2020 – 2026</p>
-                <p className="text-sm text-muted-foreground">Full-time, ongoing</p>
+                <p className="text-sm text-muted-foreground">Ongoing</p>
               </div>
             </CardContent>
           </Card>
