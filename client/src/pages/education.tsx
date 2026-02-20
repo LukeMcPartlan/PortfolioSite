@@ -1,11 +1,11 @@
-import { useExperience } from "@/hooks/use-portfolio-data";
-import { ExperienceCard } from "@/components/experience-card";
-import { GraduationCap, BookOpen, Scroll } from "lucide-react";
+import { useProjects } from "@/hooks/use-portfolio-data";
+import { ProjectCard } from "@/components/project-card";
+import { GraduationCap, Scroll } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Education() {
-  const { data: experience } = useExperience();
-  const educationJobs = experience?.filter(e => e.category === "Education") || [];
+  const { data: projects } = useProjects();
+  const educationProjects = projects?.filter(p => p.category === "Education") || [];
 
   return (
     <div className="space-y-12">
@@ -22,18 +22,14 @@ export default function Education() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Main Experience Column */}
-        <div className="lg:col-span-2 space-y-6">
-          <h2 className="text-2xl font-display font-bold flex items-center gap-2 mb-6">
-            <BookOpen className="w-6 h-6 text-primary" />
-            Teaching Experience
-          </h2>
-          {educationJobs.map((job) => (
-            <ExperienceCard key={job.id} experience={job} />
-          ))}
+        <div className="lg:col-span-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {educationProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
         </div>
 
-        {/* Sidebar Info */}
         <div className="space-y-8">
           <Card className="glass-card">
             <CardHeader>

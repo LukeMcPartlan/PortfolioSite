@@ -9,6 +9,13 @@ import bazaargenImg from "@assets/image_1771542435820.png";
 import discordImg from "@assets/discord-bot-preview.png";
 import beesTensorboardImg from "@assets/image_1771542749213.png";
 import crownsImg from "@assets/crowns-of-power-preview.png";
+import eduEastRamapoImg from "@assets/edu-east-ramapo.png";
+import eduYonkersImg from "@assets/edu-yonkers.png";
+import eduSunyImg from "@assets/edu-suny-orange.png";
+import eduMiddletownImg from "@assets/edu-middletown.png";
+import eduEsportsImg from "@assets/edu-esports-coaching.png";
+import eduRoboticsImg from "@assets/edu-robotics-camp.png";
+import eduExtendedDayImg from "@assets/edu-extended-day.png";
 
 export interface Project {
   id: string;
@@ -150,6 +157,69 @@ const PROJECTS: Project[] = [
     category: "Computer Science",
     tags: ["Node.js", "OpenAI API", "Discord.js"],
     image: discordImg,
+  },
+  {
+    id: "east-ramapo",
+    title: "East Ramapo School District",
+    description: "High School CS & Game Development Teacher. Teaching Unity game design and web development with project-based curriculum.",
+    longDescription: "Currently teaching Computer Science and Game Development to high school students at East Ramapo School District.\n\nThe curriculum is entirely project-based, covering Unity game design, C#, and web development. Students learn industry-standard workflows and build real, playable games from concept to completion. The course emphasizes hands-on development — students ship projects, not just assignments.\n\nCurriculum design covers game mechanics, object-oriented programming, version control, and collaborative development practices that mirror professional game studios.",
+    category: "Education",
+    tags: ["Unity", "C#", "Web Dev", "Curriculum Design", "High School"],
+    image: eduEastRamapoImg,
+  },
+  {
+    id: "yonkers",
+    title: "Yonkers School District",
+    description: "Math Teacher (Algebra) — achieved 180% average annual growth per iReady Diagnostic, 80% above district average.",
+    longDescription: "Taught 7th, 8th, and 9th grade Algebra sections at Yonkers School District.\n\nAchieved 180% average annual growth per iReady Diagnostic Testing — 80% above the district average. This result reflected a data-driven teaching approach focused on identifying individual student gaps and targeting instruction accordingly.\n\nDeveloped differentiated lesson plans to serve students across multiple grade levels and skill ranges simultaneously, ensuring all learners were challenged at their appropriate level.",
+    category: "Education",
+    tags: ["Algebra", "iReady", "Data-Driven Instruction", "Middle School"],
+    image: eduYonkersImg,
+  },
+  {
+    id: "suny-orange",
+    title: "SUNY Orange College",
+    description: "Computer Science Adjunct Professor — delivered college-level CS instruction.",
+    longDescription: "Served as an Adjunct Professor of Computer Science at SUNY Orange College.\n\nDelivered college-level Computer Science instruction covering foundational programming concepts, data structures, and algorithmic thinking. The experience deepened understanding of the skills students need to thrive in STEM programs and helped bridge the gap between secondary and post-secondary CS education.\n\nThis role provided insight into how students transition from introductory CS coursework to more rigorous college-level expectations.",
+    category: "Education",
+    tags: ["College", "Computer Science", "Adjunct Professor", "STEM"],
+    image: eduSunyImg,
+  },
+  {
+    id: "middletown",
+    title: "Middletown City School District",
+    description: "Computer Science Teacher — founded the district's first Esports program, designed CS curriculum, and established Robotics Summer Camp.",
+    longDescription: "Served as Computer Science Teacher at Middletown City School District from 2020 to 2023, where I built multiple programs from the ground up.\n\nFounded the district's first Esports program, where 90% of players rose from below the 40th percentile to above the 80th percentile globally, with 3 interstate first-place wins. Designed the 7th-8th grade Computer Science curriculum and taught Python programming.\n\nEstablished a Robotics Summer Camp focused on battlebots, giving students hands-on engineering experience. Collaborated on an $83M school renovation project to design Esports and technology facilities for the district.",
+    category: "Education",
+    tags: ["Python", "Curriculum Design", "Esports", "Robotics", "Middle School"],
+    image: eduMiddletownImg,
+  },
+  {
+    id: "esports-coaching",
+    title: "Esports Coaching",
+    description: "Founded and coached a varsity Esports program — 3 interstate championships, 90% of players rose to top 20% globally.",
+    longDescription: "Founded and coached the first Esports program in the Middletown City School District, building a competitive team from scratch.\n\nThe program achieved remarkable results: 90% of players rose from below the 40th percentile to above the 80th percentile in their respective games globally. The team won 3 interstate first-place trophies across varsity and JV divisions in Rocket League.\n\nBeyond competition, the program served as a vehicle for student engagement — many team members were students who struggled academically but found motivation and discipline through competitive gaming. The program demonstrated measurable improvements in attendance and academic performance among participants.",
+    category: "Education",
+    tags: ["Esports", "Coaching", "Rocket League", "Student Engagement", "Leadership"],
+    image: eduEsportsImg,
+  },
+  {
+    id: "robotics-camp",
+    title: "Summer Robotics Camp",
+    description: "Established a summer battlebots robotics camp giving students hands-on engineering experience.",
+    longDescription: "Created and ran a Summer Robotics Camp at Middletown City School District focused on building battlebots.\n\nStudents designed, built, and programmed combat robots from scratch, learning mechanical engineering, basic electronics, and programming in the process. The camp culminated in a tournament where students competed their battlebots against each other.\n\nThe program gave students hands-on experience with real engineering challenges — weight constraints, power management, structural integrity, and strategic design decisions — in an engaging, competition-driven format.",
+    category: "Education",
+    tags: ["Robotics", "Engineering", "Summer Camp", "Battlebots", "STEM"],
+    image: eduRoboticsImg,
+  },
+  {
+    id: "extended-day",
+    title: "Extended Day Programs",
+    description: "After-school programs providing additional CS instruction and project time for students.",
+    longDescription: "Ran Extended Day Programs providing after-school Computer Science instruction and dedicated project time for students.\n\nThese programs extended the school day to give students additional time to work on coding projects, receive one-on-one support, and explore topics beyond the standard curriculum. Students used this time to develop personal projects, prepare for competitions, and deepen their understanding of programming concepts.\n\nThe programs served as a bridge for students who needed extra support as well as those who wanted to push beyond classroom material.",
+    category: "Education",
+    tags: ["After-School", "CS Education", "Mentoring", "Student Support"],
+    image: eduExtendedDayImg,
   }
 ];
 

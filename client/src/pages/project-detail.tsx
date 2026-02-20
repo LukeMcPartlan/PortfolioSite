@@ -103,7 +103,7 @@ export default function ProjectDetail() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-8 animate-in">
-      <Link href={project.category === "Game Development" ? "/game-design" : "/computer-science"}>
+      <Link href={project.category === "Game Development" ? "/game-design" : project.category === "Education" ? "/education" : "/computer-science"}>
         <Button variant="ghost" className="pl-0 hover:bg-transparent hover:text-primary">
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to {project.category}
         </Button>
