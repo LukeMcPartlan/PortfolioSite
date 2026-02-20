@@ -13,7 +13,7 @@ import eduEastRamapoImg from "@assets/edu-east-ramapo.png";
 import eduYonkersImg from "@assets/edu-yonkers.png";
 import eduSunyImg from "@assets/edu-suny-orange.png";
 import eduMiddletownImg from "@assets/edu-middletown.png";
-import eduEsportsImg from "@assets/edu-esports-coaching.png";
+import eduEsportsImg from "@assets/image_1771613956073.png";
 import eduRoboticsImg from "@assets/image_1771560914359.png";
 import eduExtendedDayImg from "@assets/edu-extended-day.png";
 import gameOverwatchImg from "@assets/556089441_24599654556322531_2529247496892471526_n_1771560118154.png";
