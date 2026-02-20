@@ -226,6 +226,11 @@ const PROJECTS: Project[] = [
     category: "Education",
     tags: ["Robotics", "Engineering", "Summer Camp", "Battlebots", "STEM"],
     image: eduRoboticsImg,
+    embedUrl: "https://www.youtube.com/embed/wBPFaQh9vN0",
+    projectLinks: [
+      { label: "Robotics Camp Video 1", url: "https://youtu.be/wBPFaQh9vN0" },
+      { label: "Robotics Camp Video 2", url: "https://youtu.be/0oSqGw47Rkk" },
+    ],
   },
   {
     id: "extended-day",
