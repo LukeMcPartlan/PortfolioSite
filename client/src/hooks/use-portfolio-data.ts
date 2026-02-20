@@ -24,6 +24,7 @@ import gameHearthstoneImg from "@assets/game-hearthstone.png";
 import gameHotsImg from "@assets/game-hots.png";
 import gameMultiversusImg from "@assets/game-multiversus.png";
 import gameHaloImg from "@assets/game-halo.png";
+import gameBazaarImg from "@assets/image_1771559369844.png";
 
 export interface Project {
   id: string;
@@ -306,6 +307,15 @@ const PROJECTS: Project[] = [
     category: "Competitive Gaming",
     tags: ["FPS", "Onyx Rank", "Competitive", "Halo"],
     image: gameHaloImg,
+  },
+  {
+    id: "the-bazaar",
+    title: "The Bazaar",
+    description: "Legendary 103 ranked player. Winner of the first-ever officially hosted Bazaar tournament.",
+    longDescription: "Achieved Legendary 103 rank in The Bazaar, placing among the top competitive players globally.\n\nWon the first-ever officially hosted Bazaar tournament, marking a milestone in the game's competitive scene. As a Grand Founder, this achievement reflects deep mastery of the game's hero mechanics, economy management, and strategic decision-making from the earliest days of the competitive meta.",
+    category: "Competitive Gaming",
+    tags: ["Strategy", "Legendary 103", "Tournament Winner", "Grand Founder"],
+    image: gameBazaarImg,
   }
 ];
 
