@@ -21,7 +21,7 @@ import gameRocketLeagueImg from "@assets/game-rocket-league.png";
 import gameDbdImg from "@assets/image_1771612539222.png";
 import gameWowImg from "@assets/image_1771563608224.png";
 import gameHearthstoneImg from "@assets/image_1771620123999.png";
-import gameHotsImg from "@assets/game-hots.png";
+import gameHotsImg from "@assets/image_1771620172784.png";
 import gameMultiversusImg from "@assets/image_1771559497804.png";
 import gamePokemonUniteImg from "@assets/image_1771559524627.png";
 import gameBazaarImg from "@assets/image_1771559369844.png";
