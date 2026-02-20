@@ -25,6 +25,10 @@ import gameHotsImg from "@assets/game-hots.png";
 import gameMultiversusImg from "@assets/image_1771559497804.png";
 import gamePokemonUniteImg from "@assets/image_1771559524627.png";
 import gameBazaarImg from "@assets/image_1771559369844.png";
+import roasterConsentImg from "@assets/image_1771561756876.png";
+import roasterColorImg from "@assets/image_1771561763669.png";
+import roasterGibberishImg from "@assets/image_1771561771261.png";
+import roasterOverwatchImg from "@assets/image_1771561776013.png";
 
 export interface Project {
   id: string;
@@ -162,11 +166,18 @@ const PROJECTS: Project[] = [
   {
     id: "ryan-roaster",
     title: "RyanRoaster Bot",
-    description: "Discord Bot utilizing OpenAI API for interaction.",
-    longDescription: "A community engagement bot for Discord that leverages OpenAI's GPT models to generate humorous and context-aware responses.",
+    description: "A Discord bot powered by GPT-3 that generates roasts of my brother Ryan using his own message history.",
+    longDescription: "A Discord bot built to explore the OpenAI API. It uses a Node.js backend and Discord API calls to listen for a /roast command, then responds with a GPT-3-generated roast of my brother Ryan.\n\nThe bot works by combining two inputs: the /roast message content and a custom prompt derived from random things Ryan has actually said in Discord. I used JavaScript, Discord API calls, and OpenAI API calls to consensually collect my entire conversation history with Ryan as a string, clean it up by removing timestamps, then break it into chunks of under 2,000 characters. Whenever the RyanRoaster is called, it feeds ChatGPT one of these chunks along with the message it's responding to, and generates an original roast.\n\nFor privacy reasons, Ryan's Discord message history is not included in the repository and is replaced with a set of custom-written strings.\n\nMy favorite joke the bot generated: When asked \"Who's better at Overwatch,\" GPT-3 associated \"better\" with \"winning,\" referenced a win-loss record format, combined the fact that Ryan loses more than he wins, and turned that into a reference to the alleged size of his big toe to create an ultimate roast. The chain of reasoning GPT-3 used in real time was genuinely jaw-dropping.\n\nEven when fed completely random letters, GPT-3 had clever things to say — once interpreting gibberish as a failed attempt to spell \"foolish abomination.\"\n\nThe backend is handled by Node.js and was hosted on Glitch.com. My friend group engaged with the roaster for hours. Some screenshots were taken before /roast was a command, when the bot responded to all messages.\n\nUpdate: /roast command was later integrated to reduce spam.",
     category: "Computer Science",
-    tags: ["Node.js", "OpenAI API", "Discord.js"],
+    tags: ["Node.js", "OpenAI API", "Discord.js", "GPT-3", "JavaScript"],
     image: discordImg,
+    githubLink: "https://github.com/LukeMcPartlan/DiscordRoastBot",
+    extraImages: [
+      { src: roasterConsentImg, caption: "Ryan consenting to have his messages collected for the roaster" },
+      { src: roasterColorImg, caption: "The bot roasting Ryan's favorite color — and GPT-3 interpreting 'Ok so you dont know' as a 2.4 inch attitude problem" },
+      { src: roasterGibberishImg, caption: "Even when fed random letters, GPT-3 had clever responses — interpreting gibberish as 'foolish abomination'" },
+      { src: roasterOverwatchImg, caption: "GPT-3 chains 'better' → winning → win-loss record → Ryan losing → big toe size for the ultimate roast" },
+    ],
   },
   {
     id: "east-ramapo",
