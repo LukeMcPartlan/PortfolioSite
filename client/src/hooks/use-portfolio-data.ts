@@ -22,7 +22,7 @@ import gameDbdImg from "@assets/game-dead-by-daylight.png";
 import gameWowImg from "@assets/game-wow.png";
 import gameHearthstoneImg from "@assets/game-hearthstone.png";
 import gameHotsImg from "@assets/game-hots.png";
-import gameMultiversusImg from "@assets/game-multiversus.png";
+import gameMultiversusImg from "@assets/image_1771559497804.png";
 import gameHaloImg from "@assets/game-halo.png";
 import gameBazaarImg from "@assets/image_1771559369844.png";
 
