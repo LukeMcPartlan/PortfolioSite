@@ -316,10 +316,10 @@ const PROJECTS: Project[] = [
   {
     id: "multiversus",
     title: "MultiVersus",
-    description: "Top 0.5% globally as Superman (Rank ~7000).",
-    longDescription: "Reached the top 0.5 percentile globally in MultiVersus as Superman, ranking approximately 7000th worldwide.\n\nMultiVersus is a platform fighter that demands quick reflexes, matchup knowledge, and adaptability. Competing at this level demonstrated strong mechanical skill in a fast-paced competitive environment.",
+    description: "Top 0.5% globally as Superman (Rank ~7000), Season 1.",
+    longDescription: "Reached the top 0.5 percentile globally in MultiVersus as Superman during Season 1, ranking approximately 7000th worldwide.\n\nMultiVersus is a platform fighter that demands quick reflexes, matchup knowledge, and adaptability. Competing at this level in Season 1 demonstrated strong mechanical skill in a fast-paced competitive environment.",
     category: "Competitive Gaming",
-    tags: ["Platform Fighter", "Top 0.5%", "Superman", "Global Ranking"],
+    tags: ["Platform Fighter", "Top 0.5%", "Superman", "Season 1"],
     image: gameMultiversusImg,
   },
   {
@@ -400,7 +400,7 @@ const ACHIEVEMENTS: Achievement[] = [
   { id: "wow", game: "World of Warcraft", title: "Raid Leader #1 Guild", detail: "Garona Server, multiple server firsts", category: "Personal" },
   { id: "hearthstone", game: "Hearthstone", title: "Industry Interviews", detail: "Ben Brode, Dean Ayala, David Kosak", category: "Personal" },
   { id: "hots", game: "Heroes of the Storm", title: "Top 64 Tespa Nationals", detail: "Diamond ranked Diablo, Season 1", category: "Personal" },
-  { id: "multiversus", game: "Multi-Versus", title: "Top 7000 Superman", detail: "Top 0.5 percentile globally", category: "Personal" },
+  { id: "multiversus", game: "Multi-Versus", title: "Top 7000 Superman", detail: "Top 0.5% globally, Season 1", category: "Personal" },
   { id: "halo", game: "Halo Infinite", title: "Onyx Rank 1650", category: "Personal" }
 ];
 
