@@ -173,7 +173,8 @@ const PROJECTS: Project[] = [
     image: discordImg,
     githubLink: "https://github.com/LukeMcPartlan/DiscordRoastBot",
     projectLinks: [
-      { label: "Join Discord Server (bot currently offline)", url: "https://discord.gg/fRFZSrVvVy" },
+      { label: "Discord Server (offline)", url: "https://discord.gg/fRFZSrVvVy" },
+      { label: "GitHub Source Files", url: "https://github.com/LukeMcPartlan/DiscordRoastBot" },
     ],
     extraImages: [
       { src: roasterConsentImg, caption: "Ryan consenting to have his messages collected for the roaster" },
