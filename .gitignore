@@ -1,6 +1,40 @@
+# Dependencies
 node_modules
+
+# Build outputs
 dist
+build
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Server files
 server/public
+
+# Config backups
 vite.config.ts.*
 *.tar.gz
+
+# Database
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+.cache
