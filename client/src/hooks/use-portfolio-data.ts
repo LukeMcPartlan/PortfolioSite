@@ -235,10 +235,10 @@ const PROJECTS: Project[] = [
   {
     id: "extended-day",
     title: "Extended Day Programs",
-    description: "After-school programs providing additional CS instruction and project time for students.",
-    longDescription: "Ran Extended Day Programs providing after-school Computer Science instruction and dedicated project time for students.\n\nThese programs extended the school day to give students additional time to work on coding projects, receive one-on-one support, and explore topics beyond the standard curriculum. Students used this time to develop personal projects, prepare for competitions, and deepen their understanding of programming concepts.\n\nThe programs served as a bridge for students who needed extra support as well as those who wanted to push beyond classroom material.",
+    description: "After-school programs covering robotics, Blender 3D, math tutoring, technology skills, office tools, and 3D Tinkercad engineering.",
+    longDescription: "Ran a range of Extended Day Programs providing after-school instruction across multiple disciplines:\n\n- Robotics After School — Students built and programmed robots, extending the hands-on engineering experience from the regular curriculum into after-school projects.\n\n- Math Tutoring — Provided targeted math support for students who needed extra help or wanted to get ahead, covering algebra and foundational problem-solving skills.\n\n- Blender Class — Taught 3D modeling and animation using Blender, giving students creative tools used in game development and digital media.\n\n- Technology Tutoring — One-on-one and small group sessions helping students build digital literacy and confidence with modern technology.\n\n- Office Tools Tutoring — Guided students through essential productivity software including word processing, spreadsheets, and presentations.\n\n- 3D Tinkercad for Engineering — Students used Tinkercad to design 3D models for engineering projects, learning spatial reasoning and CAD fundamentals.",
     category: "Education",
-    tags: ["After-School", "CS Education", "Mentoring", "Student Support"],
+    tags: ["Robotics", "Blender", "Math Tutoring", "Tinkercad", "Office Tools", "After-School"],
     image: eduExtendedDayImg,
   },
   {
