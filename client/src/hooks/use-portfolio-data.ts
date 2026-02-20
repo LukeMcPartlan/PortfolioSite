@@ -31,6 +31,7 @@ export interface Project {
   extraImages?: { src: string; caption: string }[];
   embedUrl?: string;
   downloadLink?: string;
+  projectLinks?: { label: string; url: string }[];
 }
 
 export interface Experience {
@@ -162,10 +163,15 @@ const PROJECTS: Project[] = [
     id: "east-ramapo",
     title: "East Ramapo School District",
     description: "High School CS & Game Development Teacher. Teaching Unity game design and web development with project-based curriculum.",
-    longDescription: "Currently teaching Computer Science and Game Development to high school students at East Ramapo School District.\n\nThe curriculum is entirely project-based, covering Unity game design, C#, and web development. Students learn industry-standard workflows and build real, playable games from concept to completion. The course emphasizes hands-on development — students ship projects, not just assignments.\n\nCurriculum design covers game mechanics, object-oriented programming, version control, and collaborative development practices that mirror professional game studios.",
+    longDescription: "Currently teaching Computer Science and Game Development to high school students at East Ramapo School District.\n\nThe curriculum is entirely project-based, covering Unity game design, Blender 3D modeling, C#, and web development. Students learn industry-standard workflows and build real, playable games from concept to completion. The course emphasizes hands-on development — students ship projects, not just assignments.\n\nCurriculum design covers game mechanics, version control, and collaborative development practices that mirror professional game studios.",
     category: "Education",
-    tags: ["Unity", "C#", "Web Dev", "Curriculum Design", "High School"],
+    tags: ["Unity", "Blender", "C#", "Web Dev", "Curriculum Design", "High School"],
     image: eduEastRamapoImg,
+    projectLinks: [
+      { label: "Student Portfolio 1", url: "https://play.unity.com/ru/user/c0aa3e8a-1eb1-444c-a51e-8e1e1d55a767" },
+      { label: "Student Portfolio 2", url: "https://play.unity.com/en/user/0cecae5e-dd28-4a4c-ae80-432845069353" },
+      { label: "Student Portfolio 3", url: "https://play.unity.com/en/user/7764b99c-f413-454f-a417-7c98c4f7c3fc" },
+    ],
   },
   {
     id: "yonkers",
