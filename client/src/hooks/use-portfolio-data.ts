@@ -280,6 +280,9 @@ const PROJECTS: Project[] = [
     category: "Competitive Gaming",
     tags: ["Coaching", "Championships", "Varsity", "JV"],
     image: gameRocketLeagueImg,
+    extraImages: [
+      { src: eduEsportsImg, caption: "Two of our first place season finishes in Concorde Esports Eastern Region tournaments, featuring dozens of schools competing" },
+    ],
   },
   {
     id: "dead-by-daylight",
